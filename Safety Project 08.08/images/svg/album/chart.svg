@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.04 49.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #004979;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.01px;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa_1">
+    <g>
+      <line class="cls-1" x1="1.01" y1="41.15" x2="25.07" y2="41.15"/>
+      <polyline class="cls-1" points="2.64 40.86 2.64 19.95 10.73 19.95 10.73 40.86"/>
+      <polyline class="cls-1" points="15.5 40.86 15.5 10.88 23.59 10.88 23.59 40.86"/>
+      <polyline class="cls-1" points="28.36 26.73 28.36 1.01 36.45 1.01 36.45 22.79"/>
+      <circle class="cls-1" cx="37.26" cy="36.09" r="12.77"/>
+      <path class="cls-1" d="M42.1,30.51c-.98.4-9.12,9.32-10.52,10.64"/>
+      <polyline class="cls-1" points="42.1 39.57 42.1 30.51 33.04 30.51"/>
+    </g>
+  </g>
+</svg>

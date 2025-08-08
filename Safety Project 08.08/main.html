@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Szkolenia Antyterrorystyczne | Safety Project</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&family=Schibsted+Grotesk:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#23527E',
+            brandWhite: '#FFFFFF',
+            brandGray: '#929296',
+            brandBlack: '#111111',
+            brandLightBLue: '#e8f6ff',
+          },
+          fontFamily: {
+            heading: ['Oxanium', 'sans-serif'],
+            body: ['Schibsted Grotesk', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- Dots styling, button -->
+    <style>
+    .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #23527E;
+  }
+  .font-black-body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+
+</head>
+<body class="bg-brandWhite text-brandBlack font-body">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-brandWhite z-50">
+  <div class="flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="w-64">
+      <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.19 95" class="w-full h-auto fill-brandBlue"><defs/>
+    <g id="Warstwa_2-2" data-name="Warstwa 2"><path d="M72.1 6a91.3 91.3 0 0 0-32.4-6h-1A89.8 89.8 0 0 0 6.3 6L0 8.6v37C0 52 1.9 58.5 5.4 63.9a76.9 76.9 0 0 0 29.2 26.7l4.6 2.3 4.6-2.3a77.2 77.2 0 0 0 29.3-26.7 33.6 33.6 0 0 0 5.4-18.2v-37L72 6Zm0 39.6c0 5.2-1.6 10.3-4.4 14.7a71.2 71.2 0 0 1-26.8 24.5l-1.7.8-1.6-.8a72 72 0 0 1-26.8-24.5 27 27 0 0 1-4.4-14.7V12.9l2.3-.9a82.9 82.9 0 0 1 30-5.6h1a82.8 82.8 0 0 1 30 5.6l2.3 1v32.6Z"/>
+        <path d="M31 64.2v12.3a67.5 67.5 0 0 1-17.3-18.1A23.6 23.6 0 0 1 10 45.6V29.5l9.6 3.8v12.2c0 2.8.8 5.4 2.3 7.7 2.6 4 5.6 7.7 9.1 11ZM68.5 15.3v20l-9.6-4v-9.1a67.7 67.7 0 0 0-15-2.6V79c-1.6 1-3.2 2-4.7 2.7-1.5-.7-3-1.6-4.8-2.7V10.1l4.3-.1h1a80.8 80.8 0 0 1 28.8 5.3ZM30.7 20c-2.2.2-4.5.6-6.7 1l7 2.9v10.3l-11.5-4.6-9.6-4V15.4a73.4 73.4 0 0 1 21-5V20h-.2Z"/>
+        <path d="M68.5 39v6.6l-.3 3.6a22.9 22.9 0 0 1-3.5 9.2 67 67 0 0 1-17.2 18.1V64.2c3.5-3.3 6.6-7 9.2-11a14.2 14.2 0 0 0 2.2-7.6v-.1l-11.4-4.6V30.6L59 35.2l9.6 3.8ZM125 37.1v3.5h-8.4c-.5 0-.8.2-.8.8v2c0 .5.3.8.8.8h5.1c2.9 0 4.3 1.4 4.3 4.2v3.1c0 2.8-1.4 4.2-4.3 4.2H113v-3.4h8.7c.6 0 .9-.3.9-.8v-3c0-.6-.3-.8-.9-.8h-5.1c-2.8 0-4.2-1.5-4.2-4.3v-2c0-2.8 1.4-4.2 4.2-4.2h8.3ZM134.8 48.3h3l-2-5.5-5 13H127l7.4-18.7h2.8l7.4 18.6h-3.8l-1.6-4h-5.7l1.3-3.4ZM150 48.1v7.6h-3.5V37.1H158v3.5h-8v4h7.8v3.5h-7.9ZM160.3 37.1h11.3v3.5h-7.9v3.6h7.7v3.4h-7.7v4.7h8v3.4h-11.4V37.1ZM173.2 37.1h13.4v3.5h-4.9v15.1h-3.4V40.6h-5V37ZM193.3 47l-6.5-9.9h4l4.3 6.7 4.3-6.7h4l-6.6 10v8.6h-3.4v-8.6ZM211 37.1h9c2.9 0 4.3 1.4 4.3 4.3v2.4c0 2.9-1.4 4.3-4.3 4.3h-4.3v-3.4h4.3c.6 0 .9-.3.9-.9v-2.4c0-.6-.3-.8-.9-.8h-5.5v15.1H211V37.1ZM230.4 55.7H227V37.1h8.3c2.8 0 4.2 1.4 4.2 4.2v2c0 3-1.3 4.3-4 4.3l5.2 8.1h-4.2l-4.9-8v-3.5h3.7c.5 0 .8-.3.8-.8v-2c0-.6-.3-.9-.9-.9h-4.8v15.2ZM253.2 37.1c2.9 0 4.3 1.4 4.3 4.3v10.1c0 2.8-1.4 4.2-4.3 4.2h-6c-2.9 0-4.3-1.4-4.3-4.2V41.4c0-2.9 1.4-4.3 4.3-4.3h6Zm-6 3.5c-.6 0-.8.2-.8.8v10c0 .6.2.9.8.9h6c.6 0 .9-.3.9-.8V41.4c0-.6-.3-.8-.8-.8h-6.1ZM259 55.7v-3.4h4.2c.6 0 .8-.3.8-.8V37.2h3.5v14.3c0 2.8-1.4 4.2-4.3 4.2H259ZM270.7 37.1h11.4v3.5h-8v3.6h7.8v3.4H274v4.7h8.1v3.4h-11.5V37.1ZM296.7 52.3v3.4h-7.6c-2.8 0-4.3-1.4-4.3-4.2V41.4c0-2.9 1.5-4.3 4.3-4.3h7.6v3.5h-7.6c-.5 0-.8.2-.8.8v10c0 .6.3.9.8.9h7.6ZM298.2 37.1h13.4v3.5h-5v15.1h-3.4V40.6h-5V37Z"/>
+    </g>
+</svg>
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menuToggle" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 transition-all duration-300">
+      <span class="line1 w-6 h-0.5 bg-brandBlack mb-1.5 transition-transform duration-300 origin-left"></span>
+      <span class="line2 w-6 h-0.5 bg-brandBlack mb-1.5 transition-all duration-300 origin-left"></span>
+      <span class="line3 w-6 h-0.5 bg-brandBlack transition-transform duration-300 origin-left"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:block font-body text-sm md:text-base lg:text-lg tracking-wide">
+      <ul class="flex items-center space-x-6">
+        <li class="relative group">
+          <a href="#" class="flex items-center gap-1 hover:text-brandBlue whitespace-nowrap">
+            O nas
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 9l-7 7-7-7" /></svg>
+          </a>
+          <ul class="absolute left-0 mt-2 min-w-[20rem] py-2 bg-white shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Nasz zespół</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Misja firmy</a></li>
+          </ul>
+        </li>
+
+        <li class="relative group">
+          <a href="#" class="flex items-center gap-1 hover:text-brandBlue">
+            Oferta
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 9l-7 7-7-7" /></svg>
+          </a>
+          <ul class="absolute left-0 mt-2 min-w-[20rem] py-2 bg-white shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Szkolenia i&nbsp;warsztaty</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Audyty bezpieczeństwa</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Plany ochrony i&nbsp;załączniki AT</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Ochrona ludności i&nbsp;obrona cywilna</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Doradztwo i&nbsp;konsultacje</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Odporność 6.0</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Bezpieczna Uczelnia 6.0</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Zarządzanie bezpieczeństwem na&nbsp;abonament</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Platforma edukacyjna OL i&nbsp;OC</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Platforma ze&nbsp;szkoleniami online</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="hover:text-brandBlue">Wydarzenia</a></li>
+        <li><a href="#" class="hover:text-brandBlue">Referencje</a></li>
+        <li class="relative group">
+          <a href="#" class="flex items-center gap-1 hover:text-brandBlue">
+            Wiedza
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 9l-7 7-7-7" /></svg>
+          </a>
+          <ul class="absolute left-0 mt-2 min-w-[20rem] py-2 bg-white shadow-lg rounded text-lg md:text-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Blog</a></li>
+            <li><a href="#" class="block px-6 py-3 hover:bg-brandLightBLue">Do pobrania</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-brandBlue">Kontakt</a></li>
+        <li>
+          <a href="#" class="px-6 py-3 bg-brandBlue text-white border-2 border-brandBlue font-semibold rounded hover:bg-transparent hover:text-brandBlue transition-all duration-300 whitespace-nowrap">
+            Bezpłatna konsultacja
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="lg:hidden hidden max-h-[90vh] overflow-y-auto px-6 pb-4">
+  <ul class="flex flex-col text-lg font-body tracking-wide divide-y divide-brandGray/30">
+
+    <!-- O nas -->
+    <li>
+      <button class="w-full text-left flex justify-between items-center font-black-body text-brandBlack py-3 toggle-submenu hover:text-brandBlue">
+        O nas
+        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <ul class="mt-2 hidden submenu divide-y divide-brandGray/20">
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Nasz zespół</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Misja firmy</a></li>
+      </ul>
+    </li>
+
+    <!-- Oferta -->
+    <li>
+      <button class="w-full text-left flex justify-between items-center font-black-body text-brandBlack py-3 toggle-submenu hover:text-brandBlue">
+        Oferta
+        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <ul class="mt-2 hidden submenu divide-y divide-brandGray/20">
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Szkolenia i&nbsp;warsztaty</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Audyty bezpieczeństwa</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Plany ochrony i&nbsp;załączniki AT</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Ochrona ludności i&nbsp;obrona cywilna</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Doradztwo i&nbsp;konsultacje</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Odporność 6.0</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Bezpieczna Uczelnia 6.0</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Zarządzanie bezpieczeństwem na&nbsp;abonament</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Platforma edukacyjna OL i&nbsp;OC</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Platforma ze&nbsp;szkoleniami online</a></li>
+      </ul>
+    </li>
+
+    <!-- Wydarzenia -->
+    <li>
+      <a href="#" class="block py-3 hover:text-brandBlue">Wydarzenia</a>
+    </li>
+
+    <!-- Referencje -->
+    <li>
+      <a href="#" class="block py-3 hover:text-brandBlue">Referencje</a>
+    </li>
+
+    <!-- Wiedza -->
+    <li>
+      <button class="w-full text-left flex justify-between items-center font-black-body text-brandBlack py-3 toggle-submenu hover:text-brandBlue">
+        Wiedza
+        <svg class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <ul class="mt-2 hidden submenu divide-y divide-brandGray/20">
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Blog</a></li>
+        <li><a href="#" class="block py-3 px-4 hover:text-brandBlue">Do pobrania</a></li>
+      </ul>
+    </li>
+
+    <!-- Kontakt -->
+    <li>
+      <a href="#" class="block py-3 hover:text-brandBlue">Kontakt</a>
+    </li>
+
+    <!-- CTA -->
+    <li>
+      <a href="#" class="block py-3 px-4 bg-brandBlue border-2 border-brandBlue text-white text-center font-semibold rounded hover:bg-transparent hover:text-brandBlue transition-all duration-300">
+        Bezpłatna konsultacja
+      </a>
+    </li>
+
+  </ul>
+</div>
+</header>
+
+
+<section class="relative text-white z-0 overflow-hidden">
+<video autoplay="" class="absolute top-0 left-0 w-full h-full object-cover object-top z-[-2]" loop="" muted="" playsinline="">
+<source src="images/hero-video-v1.mp4" type="video/mp4"/>
+  Your browser does not support HTML5 video.
+ </video>
+<div class="absolute inset-0 top-0 left-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-1] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 p-36 flex flex-col lg:flex-row items-start justify-between gap-12 relative">
+<!-- Left -->
+<div class="flex-1 max-w-xl">
+<h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+    Twoje bezpieczeństwo <span class="whitespace-nowrap">– nasz wspólny cel!</span>
+</h1>
+<p class="text-lg text-brandWhite/80">
+    Od szczegółowego planu po praktyczne wdrożenie — umacniamy systemy bezpieczeństwa organizacji w całej Polsce.
+   </p>
+</div>
+<!-- Right -->
+<div class="flex-1 flex flex-col gap-4 w-full lg:w-auto">
+
+  <!-- Button 1 – White by default, transparent on hover -->
+  <a href="#"
+     class="px-6 py-3 bg-brandWhite text-brandBlack font-semibold font-black-body rounded border-2 border-brandWhite transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-white shadow-xl hover:shadow-brandWhite/30">
+    Ochrona ludności i obrona cywilna
+  </a>
+
+  <!-- Button 2 – Transparent, turns white on hover -->
+  <a href="#"
+     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
+    Audyty bezpieczeństwa
+  </a>
+
+  <!-- Button 3 – Same as above -->
+  <a href="#"
+     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
+    Kongres SAFE PLACE 2025
+  </a>
+
+</div>
+</section>
+
+<!-- Nasze usługi -->
+<section class="relative py-20 overflow-hidden">
+  <div class="absolute inset-0 bg-[url('images/tlo-obiektowe-białe.webp')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
+        Nasze usługi
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
+        Jak możemy wesprzeć projektowanie Twojego bezpieczeństwa?
+      </h2>
+    </div>
+
+    <!-- Grid -->
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Service 1 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/szkolenia-16x9.webp" alt="Szkolenia i warsztaty"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Szkolenia i warsztaty</h3>
+        <p class="text-sm text-brandGray mb-6">Dla zarządów • Dla pracowników • Dla każdego</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 2 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/audyty-16x9.webp" alt="Audyty bezpieczeństwa"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Audyty bezpieczeństwa</h3>
+        <p class="text-sm text-brandGray mb-6">Rzetelnie • Obiektywnie • Kompleksowo</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 3 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/plany-16x9.webp" alt="Plany ochrony"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Plany ochrony i załączniki AT</h3>
+        <p class="text-sm text-brandGray mb-6">Wykonywanie • Uzgadnianie • Aktualizacja</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 4 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/olioc-16x9.webp" alt="Ochrona ludności"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Ochrona ludności i obrona cywilna</h3>
+        <p class="text-sm text-brandGray mb-6">Doradztwo • Audyty • Szkolenia i ćwiczenia</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 5 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/doradztwo-16x9.webp" alt="Doradztwo"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Doradztwo i konsultacje</h3>
+        <p class="text-sm text-brandGray mb-6">Bezpłatnie • Rzeczowo • Wiarygodnie</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 6 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/odpornosc-60-16x9.webp" alt="Projekt Odporność"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Projekt Odporność 6.0</h3>
+        <p class="text-sm text-brandGray mb-6">Dla każdej organizacji i obiektu • Kompleksowo i&nbsp;systemowo • Z certyfikacją</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+</div>
+</section>
+
+<!-- Liczniki / Statystyki -->
+<section class="relative text-white py-20 overflow-hidden">
+  
+  <!-- Background Image with Parallax -->
+  <div class="absolute inset-0 z-[-3] bg-fixed bg-center bg-cover bg-no-repeat"
+       style="background-image: url('images/trenerzy-oloc.webp');"></div>
+
+  <!-- Gradient Overlay (same as hero) -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-2] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
+        Safety Project w liczbach
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">
+        Gwarancja najwyższej jakości projektów
+      </h2>
+    </div>
+
+    <!-- Counters Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center">
+
+      <!-- Counter Block Template -->
+      <div class="bg-brandBlack/20 backdrop-blur-sm p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-14 h-14 mb-4 mx-auto flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+        </div>
+        <p class="text-5xl font-black font-heading mb-2" data-count="21600">999+</p>
+        <p class="text-base text-white/80">Wydane certyfikaty</p>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="bg-brandBlack/40 backdrop-blur-sm p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-14 h-14 mb-4 mx-auto flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 1v13h3V1zm2 12H9V2h1zm4-1h-1V5h3v6.023a.99.99 0 0 0-.781.62l-.137.357H15V6h-1zM6 9H3v5h3zm-1 4H4v-3h1zm6 2v1H1V1h1v14zm6 1a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm0 3a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4.105-3.137l.705-1.538-1.166-1.167-1.624.724-.628-.296-.59-1.586h-1.65l-.636 1.66-.653.235-1.543-.71-1.166 1.168.727 1.627-.295.628-1.586.59v1.65l1.66.636.235.653-.71 1.543 1.168 1.166 1.627-.727.628.295.59 1.586h1.65l.636-1.66.653-.235 1.543.71 1.162-1.171-.724-1.624.296-.628 1.586-.59v-1.65l-1.66-.636zM22 18.266l-1.32.49-.543 1.16.623 1.398-.41.413-1.28-.588-1.207.434L17.315 23h-.581l-.491-1.32-1.16-.544-1.4.627-.412-.411.59-1.283-.434-1.206L12 18.315v-.581l1.32-.491.544-1.16-.627-1.4.411-.412 1.283.59 1.206-.434.548-1.427h.581l.491 1.32 1.158.543 1.397-.622.412.412-.585 1.28.434 1.204 1.427.548z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+        </div>
+        <p class="text-5xl font-black font-heading mb-2" data-count="1950">999+</p>
+        <p class="text-base text-white/80">Zrealizowane projekty</p>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="bg-brandBlack/20 backdrop-blur-sm p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-14 h-14 mb-4 mx-auto flex items-center justify-center">
+          <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M20.76 3.854l-.87-.042c-3.31-.166-5.67-.934-7.21-2.35L12 .838l-.68.624c-1.54 1.416-3.9 2.184-7.209 2.35l-.87.042-.08.87c-.574 6.312-.029 13.382 8.358 17.957l.481.262.48-.262c8.388-4.575 8.933-11.645 8.36-17.958zm-8.762 17.95c-7.879-4.3-8.381-11.005-7.837-16.993 3.552-.178 6.122-1.033 7.842-2.613 1.72 1.58 4.287 2.438 7.84 2.615.544 5.99.034 12.692-7.845 16.99zm5.524-13.946l.637.636L10.5 16 7 12.689l.637-.636 2.863 2.674z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+        </div>
+        <p class="text-5xl font-black font-heading mb-2" data-count="200">99+</p>
+        <p class="text-base text-white/80">Uzgodnione plany ochrony i&nbsp;załączniki AT</p>
+      </div>
+
+      <!-- Counter 4 -->
+      <div class="bg-brandBlack/40 backdrop-blur-sm p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="w-14 h-14 mb-4 mx-auto flex items-center justify-center">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" fill="white" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path d="M54,22C54,9.869,44.131,0,32,0S10,9.869,10,22c0,6.816,3.117,12.92,8,16.958V62
+		c0,0.758,0.428,1.45,1.105,1.789C19.388,63.931,19.694,64,19.998,64c0.426,0,0.848-0.136,1.202-0.4L32,55.5l10.8,8.1
+		c0.354,0.265,0.775,0.4,1.2,0.4c0.305,0,0.611-0.069,0.895-0.211C45.572,63.45,46,62.758,46,62V38.958
+		C50.883,34.92,54,28.816,54,22z M20,62V40.425c0.645,0.421,1.312,0.809,2,1.161V60.5L20,62z M32,53l-8,6V42.487
+		C26.481,43.46,29.178,44,32,44s5.519-0.54,8-1.513V59L32,53z M44,62l-2-1.5V41.586c0.688-0.353,1.355-0.74,2-1.161V62z M32,42
+		c-11.028,0-20-8.972-20-20S20.972,2,32,2s20,8.972,20,20S43.028,42,32,42z"/>
+	<path d="M32,4c-9.925,0-18,8.075-18,18s8.075,18,18,18s18-8.075,18-18S41.925,4,32,4z M32,38
+		c-8.822,0-16-7.178-16-16S23.178,6,32,6s16,7.178,16,16S40.822,38,32,38z"/>
+	<path d="M39.147,19.361l-4.309-0.658l-1.936-4.123c-0.165-0.352-0.518-0.575-0.905-0.575s-0.74,0.224-0.905,0.575
+		l-1.936,4.123l-4.309,0.658c-0.37,0.057-0.678,0.315-0.797,0.671s-0.029,0.747,0.232,1.016l3.146,3.227l-0.745,4.564
+		c-0.062,0.378,0.099,0.758,0.411,0.979s0.725,0.243,1.061,0.058l3.841-2.124l3.841,2.124C35.99,29.959,36.157,30,36.323,30
+		c0.202,0,0.404-0.062,0.576-0.183c0.312-0.221,0.473-0.601,0.411-0.979l-0.745-4.564l3.146-3.227
+		c0.262-0.269,0.352-0.66,0.232-1.016S39.518,19.418,39.147,19.361z M34.781,23.239c-0.222,0.228-0.322,0.546-0.271,0.859
+		l0.495,3.029l-2.522-1.395c-0.151-0.083-0.317-0.125-0.484-0.125s-0.333,0.042-0.484,0.125l-2.522,1.395l0.495-3.029
+		c0.051-0.313-0.05-0.632-0.271-0.859l-2.141-2.194l2.913-0.445c0.329-0.05,0.612-0.261,0.754-0.563l1.257-2.678l1.257,2.678
+		c0.142,0.303,0.425,0.514,0.754,0.563l2.913,0.445L34.781,23.239z"/>
+</g>
+</svg>
+        </div>
+        <p class="text-5xl font-black font-heading mb-2" data-count="100">99+</p>
+        <p class="text-base text-white/80">Rekomendacje i&nbsp;podziękowania</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Misja firmy -->
+<section class="py-20 bg-brandLightBLue text-brandBlack"> 
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- Founder image -->
+    <div class="flex justify-center md:block">
+      <img alt="mjr rez. dr hab. inż. Jarosław Stelmach, Prezes Safety Project"
+           class="w-3/4 shadow rounded-full"
+           src="images/stelmach-ksiazka.webp"/>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h2 class="text-3xl mb-6 md:text-4xl font-heading font-bold text-brandBlue">
+        Misja firmy
+      </h2>
+      <p class="mb-4 text-lg">
+        Misją firmy <span class="font-black-body">Safety Project</span> jest świadczenie profesjonalnych i&nbsp;dostosowanych do&nbsp;indywidualnych potrzeb usług szkoleniowych i&nbsp;doradczych. Nasze projekty realizujemy w&nbsp;obszarze bezpieczeństwa i&nbsp;komunikacji, ze&nbsp;szczególnym uwzględnieniem budynków użyteczności publicznej i&nbsp;obiektów kluczowych dla bezpieczeństwa państwa.
+      </p>
+      <img alt="Podpis Jarosław Stelmach"
+           class="h-36 mt-6 ml-auto"
+           src="images/stelmach-podpis.webp"/>
+    </div>
+
+  </div>
+</section>
+
+<section class="relative bg-white text-brandBlack py-20 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-[url('images/tlo-obiektowe-białe.webp')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
+
+  <!-- Content Wrapper -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <!-- Headings -->
+    <div class="text-center mb-12">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
+        Wybrane referencje
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
+        Co o nas mówią?
+      </h2>
+    </div>
+
+<div class="relative px-6 sm:px-0">
+  <!-- LEFT ARROW -->
+  <div class="absolute top-1/2 left-6 lg:-left-24">
+    <div class="swiper-button-prev p-10 rounded-full text-brandBlue bg-brandLightBLue overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
+  </div>
+
+  <!-- RIGHT ARROW -->
+  <div class="absolute top-1/2 right-6 lg:-right-24">
+    <div class="swiper-button-next p-10 rounded-full text-brandBlue bg-brandLightBLue overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
+  </div>
+
+      <!-- Swiper -->
+      <div class="swiper reference-swiper px-2">
+        <div class="swiper-wrapper items-stretch">
+          <!-- Slide -->
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
+            <img src="images/rekomendacja-ABW-5x7.webp" alt="Agencja Bezpieczeństwa Wewnętrznego" class="w-full h-auto rounded mb-4">
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Agencja Bezpieczeństwa Wewnętrznego</p>
+          </div>
+
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
+            <img src="images/rekomendacja-MFiPR-5x7.webp" alt="Ministerstwo Funduszy i Polityki Regionalnej" class="w-full h-auto rounded mb-4">
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Ministerstwo Funduszy i Polityki Regionalnej</p>
+          </div>
+
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
+            <img src="images/rekomendacja-Philips-5x7.webp" alt="Philips" class="w-full h-auto rounded mb-4">
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Philips</p>
+          </div>
+
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
+            <img src="images/rekomendacja-Starostwo-Powiatowe-w-Żurominie-5x7.webp" alt="Starostwo Powiatowe w Żurominie" class="w-full h-auto rounded mb-4">
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Starostwo Powiatowe w Żurominie</p>
+          </div>
+
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
+            <img src="images/rekomendacja-UM-Łomża-5x7.webp" alt="Urząd Miejski w Łomży" class="w-full h-auto rounded mb-4">
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Urząd Miejski w Łomży</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Dots below -->
+      <div class="mt-10 flex justify-center">
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+     
+    <div class="text-center mt-12">
+  <a href="#" class="inline-flex items-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+    Zobacz wszystkie referencje
+    <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+    </svg>
+  </a>
+</div>
+
+    <div class="mt-20 text-center">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-4">
+        Nasze wartości
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue mb-6">
+        Dlaczego Safety Project?
+      </h2>
+      <p class="mb-4 text-lg">
+        Dążymy do&nbsp;zapewnienia <span class="font-black-body">najwyższej jakości</span> realizowanym projektom, opierając naszą działalność na wieloletnim doświadczeniu zawodowym trenerów oraz łączeniu <span class="font-black-body">naukowego i&nbsp;praktycznego</span> podejścia do&nbsp;rozwiązywania złożonych problemów z&nbsp;zakresu bezpieczeństwa i&nbsp;komunikacji.
+      </p>
+
+      <!-- Icon Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+        <!-- Icon 1 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,11a2.962,2.962,0,0,1,1,.184V7H15.859A4,4,0,1,0,8.141,7H4v4.184A2.962,2.962,0,0,1,5,11a3,3,0,0,1,0,6,2.962,2.962,0,0,1-1-.184V22H9.184A2.962,2.962,0,0,1,9,21a3,3,0,0,1,6,0,2.962,2.962,0,0,1-.184,1H20V16.816A2.962,2.962,0,0,1,19,17a3,3,0,0,1,0-6Z"></path></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Kompleksowe</span> podejście</p>
+</div>
+
+        <!-- Icon 2 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M19 100.9l198.4-68.89c9.4 24.82 24.8 41.58 58.1 34.5h165.8l42.5 130.09-42.5 31.6 25.8 10.4L493 368.2l-68.5 68.4 7.4 43.4-52.3-34.5h-76l-17.2 16.7-17.4-34.1c-49.6-11.2-85-35.6-120.4-63.1l-10 28.7-24.5-34.3-59.16-28.1C31.42 248.1 24.77 174.3 19 100.9z"/></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Ogólnokrajowy</span> zasięg</p>
+</div>
+
+        <!-- Icon 3 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="-7.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>lock</title>
+<path d="M14.625 15.156h2.094c0.281 0 0.5 0.25 0.5 0.531v11c0 0.281-0.219 0.5-0.5 0.5h-16.219c-0.281 0-0.5-0.219-0.5-0.5v-11c0-0.281 0.219-0.531 0.5-0.531h2.031v-5.125c0-2.875 1.844-5.25 4.688-5.25h2.688c2.875 0 4.719 2.375 4.719 5.25v5.125zM5.188 15.156h6.813v-4.875c0-1.594-1.313-2.938-2.938-2.938h-0.969c-1.594 0-2.906 1.344-2.906 2.938v4.875zM7.156 24h2.906l-0.719-3.156c0.5-0.25 0.844-0.781 0.844-1.375 0-0.906-0.719-1.594-1.594-1.594s-1.563 0.688-1.563 1.594c0 0.594 0.344 1.125 0.844 1.375z"></path>
+</svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Poufność</span> współpracy</p>
+</div>
+
+        <!-- Icon 4 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" height="800px" width="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 224.726 224.726" xml:space="preserve">
+<path d="M223.612,109.586L190.5,35.752c-0.001-0.002-0.002-0.004-0.003-0.006l-0.043-0.096c-0.111-0.247-0.243-0.479-0.389-0.7
+	c-0.039-0.06-0.086-0.114-0.127-0.171c-0.131-0.182-0.272-0.353-0.424-0.514c-0.06-0.063-0.121-0.125-0.184-0.185
+	c-0.168-0.159-0.345-0.306-0.533-0.44c-0.049-0.036-0.094-0.076-0.145-0.11c-0.236-0.156-0.486-0.29-0.746-0.405
+	c-0.074-0.033-0.151-0.057-0.227-0.086c-0.204-0.078-0.411-0.143-0.625-0.194c-0.088-0.021-0.175-0.042-0.264-0.058
+	c-0.293-0.054-0.591-0.09-0.896-0.09h-58.428c-1-3.111-2.943-5.794-5.485-7.737v-7.262c0-2.761-2.239-5-5-5h-9.334
+	c-2.761,0-5,2.239-5,5v7.381c-2.465,1.933-4.347,4.572-5.326,7.619H38.734c-0.305,0-0.602,0.037-0.896,0.09
+	c-0.09,0.016-0.176,0.037-0.264,0.058c-0.214,0.051-0.422,0.116-0.625,0.194c-0.076,0.029-0.153,0.053-0.227,0.086
+	c-0.26,0.115-0.51,0.248-0.746,0.405c-0.051,0.034-0.096,0.074-0.145,0.11c-0.188,0.134-0.365,0.28-0.533,0.44
+	c-0.064,0.06-0.124,0.122-0.185,0.185c-0.153,0.161-0.293,0.333-0.424,0.514c-0.042,0.058-0.088,0.112-0.127,0.171
+	c-0.146,0.221-0.278,0.453-0.389,0.7l-0.043,0.096c-0.001,0.002-0.002,0.004-0.003,0.006L0.897,109.848
+	C0.335,110.657,0,111.636,0,112.696c0,21.358,17.376,38.734,38.734,38.734c21.358,0,38.734-17.376,38.734-38.734
+	c0-1.06-0.334-2.038-0.897-2.847L46.456,42.696h50.986c1.007,2.905,2.831,5.424,5.204,7.286v125.381H58.308
+	c-1.871,0-3.586,1.045-4.444,2.708L40.11,204.738c-0.799,1.55-0.733,3.405,0.174,4.894c0.908,1.489,2.525,2.398,4.27,2.398h135.519
+	c0.006-0.001,0.012,0,0.02,0c2.761,0,5-2.239,5-5c0-0.98-0.282-1.894-0.769-2.665l-13.563-26.294
+	c-0.858-1.663-2.573-2.708-4.444-2.708H121.98V50.101c2.449-1.873,4.334-4.436,5.363-7.405h50.828l-30.475,67.954
+	c-0.008,0.018-0.012,0.036-0.02,0.054c-0.023,0.054-0.04,0.11-0.062,0.165c-0.09,0.229-0.162,0.463-0.217,0.699
+	c-0.014,0.062-0.032,0.122-0.044,0.184c-0.055,0.287-0.083,0.576-0.087,0.866c0,0.027-0.008,0.051-0.008,0.078
+	c0,21.358,17.376,38.734,38.734,38.734s38.734-17.376,38.734-38.734C224.726,111.514,224.298,110.442,223.612,109.586z
+	 M64.646,107.696H12.822l25.912-57.781L64.646,107.696z M118.226,37.53c0,3.217-2.617,5.833-5.833,5.833
+	c-3.217,0-5.834-2.617-5.834-5.833c0-3.217,2.617-5.833,5.834-5.833C115.609,31.696,118.226,34.313,118.226,37.53z M159.98,107.696
+	l25.913-57.781l25.912,57.781H159.98z"/>
+</svg>
+  <p class="text-brandBlack text-lg text-center">100% zgodności z <span class="font-black-body">aktualnymi przepisami prawa</span></p>
+</div>
+
+        <!-- Icon 5 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9 4.5C15.9 3 14.418 2 13.26 2c-.806 0-.869.612-.993 1.82-.055.53-.121 1.174-.267 1.93-.386 2.002-1.72 4.56-2.996 5.325V17C9 19.25 9.75 20 13 20h3.773c2.176 0 2.703-1.433 2.899-1.964l.013-.036c.114-.306.358-.547.638-.82.31-.306.664-.653.927-1.18.311-.623.27-1.177.233-1.67-.023-.299-.044-.575.017-.83.064-.27.146-.475.225-.671.143-.356.275-.686.275-1.329 0-1.5-.748-2.498-2.315-2.498H15.5S15.9 6 15.9 4.5zM5.5 10A1.5 1.5 0 0 0 4 11.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 5.5 10z"/></svg>
+  <p class="text-brandBlack text-lg text-center">Gwarancja <span class="font-black-body">satysfakcji</span></p>
+</div>
+
+        <!-- Icon 6 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="m 11.96875,4.75 -9.9375,0 C 1.8759297,4.75 1.75,4.62407 1.75,4.46875 L 1.75,3.625 C 1.75,3.00367 2.2536719,2.5 2.875,2.5 L 4,2.5 4,1.28125 C 4,1.12593 4.1259297,1 4.28125,1 l 0.9375,0 C 5.3740703,1 5.5,1.12593 5.5,1.28125 l 0,1.21875 3,0 0,-1.21875 C 8.5,1.12593 8.6259297,1 8.78125,1 l 0.9375,0 C 9.8740703,1 10,1.12593 10,1.28125 L 10,2.5 l 1.125,0 c 0.621328,0 1.125,0.50367 1.125,1.125 l 0,0.84375 C 12.25,4.62407 12.12407,4.75 11.96875,4.75 Z m -9.9375,0.75 9.9375,0 C 12.12407,5.5 12.25,5.62593 12.25,5.78125 l 0,6.09375 C 12.25,12.49633 11.746328,13 11.125,13 l -8.25,0 C 2.2536719,13 1.75,12.49633 1.75,11.875 l 0,-6.09375 C 1.75,5.62593 1.8759297,5.5 2.03125,5.5 Z M 9.842875,7.74876 9.1826641,7.08318 C 9.0732813,6.97291 8.8952031,6.97218 8.7849297,7.08118 L 6.2996875,9.54643 5.2220313,8.46005 C 5.1126484,8.34978 4.9345469,8.34905 4.8242734,8.45805 L 4.1587188,9.11828 c -0.1102735,0.10938 -0.111,0.28746 -0.00159,0.39774 l 1.9359609,1.95161 c 0.1093829,0.11028 0.287461,0.111 0.3977344,0.002 l 3.350461,-3.32356 c 0.1102734,-0.10938 0.111,-0.28746 0.00159,-0.39773 z"/></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Terminowość</span> realizacji projektów</p>
+</div>
+      </div>
+
+
+       <a href="#" class="inline-flex items-center mt-12 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+    Umów się na bezpłatną konsultację
+  </a>
+    </div>
+
+  </div>
+  
+</section>
+
+<!-- Kontakt -->
+<section class="bg-[linear-gradient(to_bottom_right,_#000000,_#1f81f4)] text-brandWhite py-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-5 items-start">
+
+    <!-- Left: Contact form inside blue box -->
+    <div class="lg:col-span-3 bg-brandBlue/90 p-8 shadow-lg">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+        Nie wiesz, od czego zacząć?
+      </h2>
+      <p class="mb-10 text-white/80">Skontaktuj się z nami bezpośrednio lub poprzez formularz, a nasz konsultant pomoże Ci w podjęciu kolejnych kroków.</p>
+
+      <form action="#" method="POST" class="space-y-6">
+  <div>
+    <label for="name" class="block text-sm font-medium mb-1 text-white">Nazwa firmy lub imię i nazwisko</label>
+    <input type="text" id="name" name="name" required
+      class="w-full border border-white/30 rounded px-6 py-3 bg-white text-brandBlack placeholder-brandBlack/60 focus:outline-none focus:ring-2 focus:ring-brandGray">
+  </div>
+
+  <div>
+    <label for="email" class="block text-sm font-medium mb-1 text-white">Email</label>
+    <input type="email" id="email" name="email" required
+      class="w-full border border-white/30 rounded px-6 py-3 bg-white text-brandBlack placeholder-brandBlack/60 focus:outline-none focus:ring-2 focus:ring-brandGray">
+  </div>
+
+  <div>
+    <label for="phone" class="block text-sm font-medium mb-1 text-white">Telefon kontaktowy</label>
+    <input type="tel" id="phone" name="phone" required
+      class="w-full border border-white/30 rounded px-6 py-3 bg-white text-brandBlack placeholder-brandBlack/60 focus:outline-none focus:ring-2 focus:ring-brandGray">
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium mb-1 text-white">Treść wiadomości</label>
+    <textarea id="message" name="message" rows="5" required
+      class="w-full border border-white/30 rounded px-6 py-3 bg-white text-brandBlack placeholder-brandBlack/60 focus:outline-none focus:ring-2 focus:ring-brandGray"></textarea>
+  </div>
+
+  <!-- Consents -->
+  <div class="space-y-4 text-sm text-white">
+    <label class="flex items-start gap-2">
+      <input type="checkbox" required class="mt-1 accent-white">
+      <span>
+        Zapoznałem się i akceptuję zasady przetwarzania danych osobowych przez Safety Project sp.&nbsp;z&nbsp;o.o. Wyrażam zgodę na otrzymywanie informacji handlowych środkami komunikacji elektronicznej i telefonicznej kierowanymi przez Safety Project sp. z o.o.
+      </span>
+    </label>
+
+    <p class="text-xs text-white/70 leading-relaxed">
+      Zgodnie z regulaminem, wypełnianie formularza w imieniu osób trzecich jest ściśle zabronione.
+    </p>
+
+    <p class="text-xs text-white/70 leading-relaxed">
+      W związku z wyrażonymi zgodami przysługuje Państwu:
+      <br>• Prawo dostępu do danych
+      <br>• Prawo do sprzeciwu i wycofania zgody
+      <br>• Prawo do usunięcia danych
+    </p>
+  </div>
+
+  <div class="pt-4">
+    <button type="submit"
+      class="px-6 py-3 bg-white border-2 border-brandWhite text-brandBlue font-semibold rounded hover:bg-transparent hover:text-white transition">
+      Wyślij wiadomość
+    </button>
+  </div>
+</form>
+    </div>
+
+   <!-- Right: Salespeople -->
+<div class="lg:col-span-2 relative bg-white overflow-hidden h-full">
+  
+  <!-- Background SVG -->
+  <div class="absolute top-0 right-0 h-full z-0 pointer-events-none">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.8 122.6" class="h-full w-auto">
+      <path fill="#e8f6ff" d="M11.4,15.9c5.4-2.1,10.9-3.7,16.5-4.9,7.6-1.7,15.4-2.5,23.2-2.5h.7V0h-.7C42.7,0,34.3.9,26.1,2.7c-6,1.3-12,3.1-17.8,5.3L0,11.2v48.9C0,68.7,2.5,77.1,7.1,84.3c5.2,8.1,11.5,15.4,18.7,21.6,6.1,5.3,12.8,9.9,19.9,13.6l6.1,3.2v-9.5h0s-2.1-1.1-2.1-1.1c-6.6-3.4-12.7-7.6-18.3-12.5-6.6-5.8-12.4-12.4-17.2-19.9-3.8-5.8-5.8-12.5-5.8-19.5V17l3-1.2Z"/>
+      <path fill="#e8f6ff" d="M40.8,84.8v16.3c-2.1-1.5-4.2-3.2-6.4-5.1-7.2-6.3-12.5-13-16.3-18.9-3.3-5.1-5-10.9-5-17v-21.2l12.6,5.1v16.1c0,3.6,1,7.1,3,10.1,3.5,5.3,7.5,10.2,12.1,14.5h0Z"/>
+      <path fill="#e8f6ff" d="M51.8,13.1v94.7c-2-1-4.1-2.2-6.3-3.6V13.3c2-.1,3.9-.1,5.7-.1h.7Z"/>
+      <path fill="#e8f6ff" d="M40.6,26.4c-3,.3-5.9.8-8.9,1.5l9.1,3.7v13.6l-15.1-6.1-12.6-5.1v-13.7c2-.8,4.2-1.6,6.6-2.3,2.8-.9,5.9-1.7,9.2-2.4,4.2-.9,8.2-1.5,11.9-1.9v12.7c0,0-.2,0-.2,0h0Z"/>
+    </svg>
+  </div>
+
+  <div class="relative z-10 space-y-8 p-4 text-base text-brandBlack">
+  <!-- Person 1 -->
+      <div class="flex items-center gap-4">
+        <img src="images/damian-ucieszynski-square.webp" alt="Damian Ucieszyński" class="w-24 h-24 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-black-body mt-4">Damian Ucieszyński</h3>
+          <p class="text-brandGray">Opiekun klienta</p>
+          <p class="flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 5.3585V14H16V5.35849L8 10.3585L0 5.3585Z" />
+      <path d="M16 3V2H0V3L8 8L16 3Z" />
+    </svg>
+    kontakt@safetyproject.pl
+  </p>
+          <p class="text-base flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"/>
+    </svg>
+    (+48) 518 275 996
+  </p>
+        </div>
+      </div>  
+  <!-- Person 2 -->
+      <div class="flex items-center gap-4">
+        <img src="images/radoslaw-wozniak-square.webp" alt="Radosław Woźniak" class="w-24 h-24 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-black-body mt-4">Radosław Woźniak</h3>
+          <p class="text-brandGray">Opiekun klienta</p>
+          <p class="flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 5.3585V14H16V5.35849L8 10.3585L0 5.3585Z" />
+      <path d="M16 3V2H0V3L8 8L16 3Z" />
+    </svg>
+    kontakt@safetyproject.pl
+  </p>
+          <p class="text-base flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"/>
+    </svg>
+    (+48) 798 780 665
+  </p>
+        </div>
+      </div>
+
+      <!-- Person 3 -->
+      <div class="flex items-center gap-4">
+        <img src="https://via.placeholder.com/80" alt="Justyna Purzyńska" class="w-24 h-24 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-black-body mt-4">Justyna Purzyńska</h3>
+          <p class="text-brandGray">Sekretariat warsztatów i konferencji</p>
+          <p class="flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 5.3585V14H16V5.35849L8 10.3585L0 5.3585Z" />
+      <path d="M16 3V2H0V3L8 8L16 3Z" />
+    </svg>
+    kongres@safeplace.edu.pl
+  </p>
+          <p class="text-base flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"/>
+    </svg>
+    (+48) 574 800 166
+  </p>
+        </div>
+      </div>
+
+      <!-- Person 4 -->
+      <div class="flex items-center gap-4">
+        <img src="images/agnieszka-dwornicka-square.webp" alt="Agnieszka Dwornicka" class="w-24 h-24 rounded-full object-cover">
+        <div>
+          <h3 class="text-xl font-black-body mt-4">Agnieszka Dwornicka</h3>
+          <p class="text-brandGray">Biuro zarządu</p>
+          <p class="flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 5.3585V14H16V5.35849L8 10.3585L0 5.3585Z" />
+      <path d="M16 3V2H0V3L8 8L16 3Z" />
+    </svg>
+    kontakt@safetyproject.pl
+  </p>
+          <p class="text-base flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"/>
+    </svg>
+    (+48) 571 517 475
+  </p>
+        </div>
+      </div>
+      </div>    
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer (with FAQ on top) -->
+<footer class="w-full bg-brandBlack text-brandWhite px-6 pt-20 pb-8">
+  <!-- FAQ -->
+  <div class="max-w-7xl mx-auto mb-20">
+    <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandWhite mb-10 inline-block">
+      Najczęściej zadawane pytania
+    </h2>
+
+    <div class="space-y-4">
+      <!-- FAQ Item -->
+      <div class="faq-item border bg-white">
+        <button class="w-full flex items-center justify-between px-4 py-3 text-left font-black-body text-brandBlue hover:bg-brandLightBLue transition">
+          Kto może wziąć udział w szkoleniu?
+          <svg class="w-4 h-4 stroke-brandBlue transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-content px-4 pb-4 text-sm text-brandGray hidden">
+          To jest tekst zastępczy. Wkrótce wypełnimy tą przestrzeń treścią.
+        </div>
+      </div>
+
+      <div class="faq-item border bg-white">
+        <button class="w-full flex items-center justify-between px-4 py-3 text-left font-black-body text-brandBlue hover:bg-brandLightBLue transition">
+          Jak zapisać się na szkolenie?
+          <svg class="w-4 h-4 stroke-brandBlue transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-content px-4 pb-4 text-sm text-brandGray hidden">
+          To jest tekst zastępczy. Wkrótce wypełnimy tą przestrzeń treścią.
+        </div>
+      </div>
+
+      <div class="faq-item border bg-white">
+        <button class="w-full flex items-center justify-between px-4 py-3 text-left font-black-body text-brandBlue hover:bg-brandLightBLue transition">
+          Czy ustawa o ochronie ludności i obronie cywilnej mnie dotyczy?
+          <svg class="w-4 h-4 stroke-brandBlue transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="faq-content px-4 pb-4 text-sm text-brandGray hidden">
+          To jest tekst zastępczy. Wkrótce wypełnimy tą przestrzeń treścią.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
+    <!-- Column 1: Logo + desc -->
+    <div class="flex-1">
+      <div class="w-64 mb-4 md:mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.19 95" class="w-full h-auto fill-brandWhite"><defs/>
+          <g id="Warstwa_2-2" data-name="Warstwa 2"><path d="M72.1 6a91.3 91.3 0 0 0-32.4-6h-1A89.8 89.8 0 0 0 6.3 6L0 8.6v37C0 52 1.9 58.5 5.4 63.9a76.9 76.9 0 0 0 29.2 26.7l4.6 2.3 4.6-2.3a77.2 77.2 0 0 0 29.3-26.7 33.6 33.6 0 0 0 5.4-18.2v-37L72 6Zm0 39.6c0 5.2-1.6 10.3-4.4 14.7a71.2 71.2 0 0 1-26.8 24.5l-1.7.8-1.6-.8a72 72 0 0 1-26.8-24.5 27 27 0 0 1-4.4-14.7V12.9l2.3-.9a82.9 82.9 0 0 1 30-5.6h1a82.8 82.8 0 0 1 30 5.6l2.3 1v32.6Z"/>
+            <path d="M31 64.2v12.3a67.5 67.5 0 0 1-17.3-18.1A23.6 23.6 0 0 1 10 45.6V29.5l9.6 3.8v12.2c0 2.8.8 5.4 2.3 7.7 2.6 4 5.6 7.7 9.1 11ZM68.5 15.3v20l-9.6-4v-9.1a67.7 67.7 0 0 0-15-2.6V79c-1.6 1-3.2 2-4.7 2.7-1.5-.7-3-1.6-4.8-2.7V10.1l4.3-.1h1a80.8 80.8 0 0 1 28.8 5.3ZM30.7 20c-2.2.2-4.5.6-6.7 1l7 2.9v10.3l-11.5-4.6-9.6-4V15.4a73.4 73.4 0 0 1 21-5V20h-.2Z"/>
+            <path d="M68.5 39v6.6l-.3 3.6a22.9 22.9 0 0 1-3.5 9.2 67 67 0 0 1-17.2 18.1V64.2c3.5-3.3 6.6-7 9.2-11a14.2 14.2 0 0 0 2.2-7.6v-.1l-11.4-4.6V30.6L59 35.2l9.6 3.8ZM125 37.1v3.5h-8.4c-.5 0-.8.2-.8.8v2c0 .5.3.8.8.8h5.1c2.9 0 4.3 1.4 4.3 4.2v3.1c0 2.8-1.4 4.2-4.3 4.2H113v-3.4h8.7c.6 0 .9-.3.9-.8v-3c0-.6-.3-.8-.9-.8h-5.1c-2.8 0-4.2-1.5-4.2-4.3v-2c0-2.8 1.4-4.2 4.2-4.2h8.3ZM134.8 48.3h3l-2-5.5-5 13H127l7.4-18.7h2.8l7.4 18.6h-3.8l-1.6-4h-5.7l1.3-3.4ZM150 48.1v7.6h-3.5V37.1H158v3.5h-8v4h7.8v3.5h-7.9ZM160.3 37.1h11.3v3.5h-7.9v3.6h7.7v3.4h-7.7v4.7h8v3.4h-11.4V37.1ZM173.2 37.1h13.4v3.5h-4.9v15.1h-3.4V40.6h-5V37ZM193.3 47l-6.5-9.9h4l4.3 6.7 4.3-6.7h4l-6.6 10v8.6h-3.4v-8.6ZM211 37.1h9c2.9 0 4.3 1.4 4.3 4.3v2.4c0 2.9-1.4 4.3-4.3 4.3h-4.3v-3.4h4.3c.6 0 .9-.3.9-.9v-2.4c0-.6-.3-.8-.9-.8h-5.5v15.1H211V37.1ZM230.4 55.7H227V37.1h8.3c2.8 0 4.2 1.4 4.2 4.2v2c0 3-1.3 4.3-4 4.3l5.2 8.1h-4.2l-4.9-8v-3.5h3.7c.5 0 .8-.3.8-.8v-2c0-.6-.3-.9-.9-.9h-4.8v15.2ZM253.2 37.1c2.9 0 4.3 1.4 4.3 4.3v10.1c0 2.8-1.4 4.2-4.3 4.2h-6c-2.9 0-4.3-1.4-4.3-4.2V41.4c0-2.9 1.4-4.3 4.3-4.3h6Zm-6 3.5c-.6 0-.8.2-.8.8v10c0 .6.2.9.8.9h6c.6 0 .9-.3.9-.8V41.4c0-.6-.3-.8-.8-.8h-6.1ZM259 55.7v-3.4h4.2c.6 0 .8-.3.8-.8V37.2h3.5v14.3c0 2.8-1.4 4.2-4.3 4.2H259ZM270.7 37.1h11.4v3.5h-8v3.6h7.8v3.4H274v4.7h8.1v3.4h-11.5V37.1ZM296.7 52.3v3.4h-7.6c-2.8 0-4.3-1.4-4.3-4.2V41.4c0-2.9 1.5-4.3 4.3-4.3h7.6v3.5h-7.6c-.5 0-.8.2-.8.8v10c0 .6.3.9.8.9h7.6ZM298.2 37.1h13.4v3.5h-5v15.1h-3.4V40.6h-5V37Z"/>
+          </g>
+        </svg>
+      </div>
+      <p class="text-base md:text-base text-brandGray max-w-sm">
+        Wspieramy instytucje i organizacje w budowaniu odporności. Szkolenia, doradztwo i wdrożenia systemów bezpieczeństwa w całej Polsce.
+      </p>
+    </div>
+
+    <!-- Column 2: Nav -->
+    <div class="flex-1">
+      <h2 class="text-lg font-bold mb-2">Menu</h2>
+      <ul class="text-base text-brandGray space-y-1">
+        <li><a href="#" class="hover:text-brandBlue transition">O nas</a></li>
+        <li><a href="#" class="hover:text-brandBlue transition">Oferta</a></li>
+        <li><a href="#" class="hover:text-brandBlue transition">Wydarzenia</a></li>
+        <li><a href="#" class="hover:text-brandBlue transition">Referencje</a></li>
+        <li><a href="#" class="hover:text-brandBlue transition">Wiedza</a></li>
+        <li><a href="#" class="hover:text-brandBlue transition">Bezpłatna konsultacja</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact -->
+    <div class="flex-1">
+  <a href="#"><h2 class="text-lg font-bold mb-2">Kontakt</h2></a>
+
+  <p class="text-base text-brandGray flex items-center gap-2">
+    <svg class="w-4 h-4 fill-current text-brandGray" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 5.3585V14H16V5.35849L8 10.3585L0 5.3585Z" />
+      <path d="M16 3V2H0V3L8 8L16 3Z" />
+    </svg>
+    kontakt@safetyproject.pl
+  </p>
+
+  <p class="text-base text-brandGray flex items-center gap-2 mt-1">
+    <svg class="w-4 h-4 fill-current text-brandGray" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"/>
+    </svg>
+    (+48) 571 517 475
+  </p>
+
+  <p class="text-base text-brandGray flex items-center gap-2 mt-1">
+    <svg class="w-4 h-4 fill-current text-brandGray" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.37892 10.2236L8 16L12.6211 10.2236C13.5137 9.10788 14 7.72154 14 6.29266V6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6V6.29266C2 7.72154 2.4863 9.10788 3.37892 10.2236ZM8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" />
+    </svg>
+    ul. Muchoborska 18, 54-424 Wrocław
+  </p>
+  <h2 class="text-lg font-bold mb-2 mt-4">Dane rejestrowe</h2>
+  <p class="text-base text-brandGray">Safety Project sp. z o.o.</p>
+  <p class="text-base text-brandGray">ul. Zaułek Rogoziński 11B/4</p>
+  <p class="text-base text-brandGray">51-116 Wrocław</p>
+  <p class="text-base text-brandGray">NIP: 8952236010</p>
+</div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="mt-8 pt-6 border-t border-brandGray text-base text-brandGray">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <!-- Legal links -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+      <a href="#" class="hover:text-brandWhite transition">RODO</a>
+      <a href="#" class="hover:text-brandWhite transition">Polityka Cookies</a>
+      <a href="#" class="hover:text-brandWhite transition">Klauzula informacyjna</a>
+    </div>
+
+    <!-- Social media -->
+    <div class="flex gap-4 justify-center md:justify-end text-xl">
+      <a href="#" class="hover:text-brandBlue transition" aria-label="Facebook">
+        <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3H14v7A10 10 0 0 0 22 12z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-brandBlue transition" aria-label="LinkedIn">
+        <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.5 1.1 2.5 2.5zM0 8.5h5v15H0v-15zm7.5 0h4.7v2h.1c.6-1.1 2.1-2.3 4.4-2.3 4.7 0 5.6 3.1 5.6 7.2V24h-5v-6.6c0-1.6 0-3.7-2.3-3.7s-2.7 1.8-2.7 3.6V24h-5v-15z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-brandBlue transition" aria-label="Instagram">
+        <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-brandBlue transition" aria-label="YouTube">
+        <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M21.8 8s-.2-1.5-.8-2.2c-.7-.9-1.5-1-1.9-1.1C16.4 4.5 12 4.5 12 4.5h0s-4.4 0-7.1.2c-.4 0-1.2.2-1.9 1.1-.6.7-.8 2.2-.8 2.2S2 9.6 2 11.3v1.5c0 1.7.2 3.3.2 3.3s.2 1.5.8 2.2c.7.9 1.6.9 2 .9 1.4.1 6 .2 6 .2s4.4 0 7.1-.2c.4 0 1.2-.2 1.9-1.1.6-.7.8-2.2.8-2.2s.2-1.6.2-3.3v-1.5c0-1.7-.2-3.3-.2-3.3zM9.8 14.3V9.7l5.3 2.3-5.3 2.3z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="mt-4 text-center text-xs text-brandGray">
+    &copy; 2025 Safety Project sp.&nbsp;z&nbsp;o.o. Wszelkie prawa zastrzeżone.
+  </div>
+</div>
+</footer>
+
+  <!-- Hamburger Script-->
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("mobileMenu");
+    const [line1, line2, line3] = toggle.querySelectorAll("span");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("open");
+      menu.classList.toggle("hidden");
+
+      if (toggle.classList.contains("open")) {
+        line1.classList.add("rotate-45", "top-[-3px]", "left-[8px]");
+        line2.classList.add("opacity-0", "w-0");
+        line3.classList.add("-rotate-45", "top-[39px]", "left-[8px]");
+      } else {
+        line1.classList.remove("rotate-45", "top-[-3px]", "left-[8px]");
+        line2.classList.remove("opacity-0", "w-0");
+        line3.classList.remove("-rotate-45", "top-[39px]", "left-[8px]");
+      }
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.toggle-submenu').forEach(button => {
+    button.addEventListener('click', () => {
+      const submenu = button.nextElementSibling;
+      submenu.classList.toggle('hidden');
+      button.querySelector('svg').classList.toggle('rotate-180');
+    });
+  });
+</script>
+
+<!-- Counter numbers -->
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('[data-count]');
+
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute('data-count');
+      let current = 0;
+      const speed = 100;
+
+      const update = () => {
+        const increment = Math.ceil(target / speed);
+        if (current < target) {
+          current += increment;
+          counter.innerText = `${Math.min(current, target).toLocaleString()}+`;
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = `${target.toLocaleString()}+`;
+        }
+      };
+
+      update();
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          animateCounter(counter);
+          obs.unobserve(counter); // run only once
+        }
+      });
+    }, {
+      threshold: 0.5 // trigger when 50% visible
+    });
+
+    counters.forEach(counter => observer.observe(counter));
+  });
+</script>
+
+<!-- Carousel -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script>
+  const swiper = new Swiper('.reference-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  autoplay: {
+    delay: 3000, // slide every 3 seconds
+    disableOnInteraction: false // keep auto-playing after user clicks/swipes
+  },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 }
+  }
+});
+</script>
+
+<!-- FAQ list script -->
+<script>
+  document.querySelectorAll('.faq-item button').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const content = item.querySelector('.faq-content');
+      const icon = button.querySelector('svg');
+
+      // Toggle visibility
+      content.classList.toggle('hidden');
+
+      // Rotate icon
+      icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
+
+</body>
+</html>

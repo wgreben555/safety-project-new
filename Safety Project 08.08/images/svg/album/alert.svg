@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.48 37.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #008cd3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.55px;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa_1">
+    <g>
+      <path class="cls-1" d="M37.16,36.45l-32.59-.08c-.82-.04-1.45-.11-1.73-.23-2.34-.98-2.44-3.11-1.53-5.09L17.72,3.06c1.74-2.96,4.99-3.1,6.9-.1l16.83,28.98c.91,2.16-.76,4.24-3.05,4.41-.37.05-.79.08-1.24.09Z"/>
+      <path class="cls-1" d="M21.24,28.46c.47,0,.85.38.85.85s-.38.85-.85.85-.85-.38-.85-.85.38-.85.85-.85Z"/>
+      <polygon class="cls-1" points="20.39 12.43 22.09 12.43 21.24 24.45 20.39 12.43"/>
+    </g>
+  </g>
+</svg>

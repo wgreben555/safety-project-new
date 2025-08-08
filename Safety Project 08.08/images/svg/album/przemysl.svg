@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.89 52.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #004979;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.98px;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa_1">
+    <g>
+      <path class="cls-1" d="M.99,28.53h24.57V10.83l8.37,4.58v-4.92l8.98,4.92v-4.92l8.98,4.92c.02,10.16.01,25.91.01,36.08H.99v-22.97Z"/>
+      <polyline class="cls-1" points="9.78 4.67 10.44 28.53 3.97 28.53 4.63 4.67"/>
+      <polyline class="cls-1" points="15.19 4.67 14.53 28.53 21 28.53 20.34 4.67"/>
+      <rect class="cls-1" x="5.97" y="34.5" width="14.54" height="3.27"/>
+      <rect class="cls-1" x="5.97" y="41.69" width="14.54" height="3.27"/>
+      <polyline class="cls-1" points="31.66 51.49 31.66 41.69 46.35 41.69 46.35 51.49"/>
+      <line class="cls-1" x1="25.56" y1="28.53" x2="25.56" y2="51.49"/>
+      <rect class="cls-1" x="42.61" y="34.5" width="3.74" height="3.27"/>
+      <rect class="cls-1" x="42.61" y="27.54" width="3.74" height="3.27"/>
+      <rect class="cls-1" x="42.61" y="20.57" width="3.74" height="3.27"/>
+      <rect class="cls-1" x="3.42" y=".99" width="7.56" height="3.27"/>
+      <rect class="cls-1" x="13.98" y=".99" width="7.56" height="3.27"/>
+    </g>
+  </g>
+</svg>
