@@ -19,6 +19,7 @@
             brandGray: '#929296',
             brandBlack: '#111111',
             brandLightBLue: '#e8f6ff',
+            brandAccent: '#cca400',
           },
           fontFamily: {
             heading: ['Oxanium', 'sans-serif'],
@@ -117,7 +118,7 @@
         </li>
         <li><a href="#" class="hover:text-brandBlue">Kontakt</a></li>
         <li>
-          <a href="#" class="px-6 py-3 bg-brandBlue text-white border-2 border-brandBlue font-semibold rounded hover:bg-transparent hover:text-brandBlue transition-all duration-300 whitespace-nowrap">
+          <a href="#" class="px-6 py-3 bg-brandAccent text-white border-2 border-brandAccent font-semibold rounded hover:bg-transparent hover:text-brandAccent transition-all duration-300 whitespace-nowrap">
             Bezpłatna konsultacja
           </a>
         </li>
@@ -204,43 +205,45 @@
 
 
 <section class="relative text-white z-0 overflow-hidden">
-<video autoplay="" class="absolute top-0 left-0 w-full h-full object-cover object-top z-[-2]" loop="" muted="" playsinline="">
-<source src="images/hero-video-v1.mp4" type="video/mp4"/>
-  Your browser does not support HTML5 video.
- </video>
-<div class="absolute inset-0 top-0 left-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-1] pointer-events-none"></div>
-<div class="max-w-7xl mx-auto px-6 p-36 flex flex-col lg:flex-row items-start justify-between gap-12 relative">
-<!-- Left -->
-<div class="flex-1 max-w-xl">
-<h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-    Twoje bezpieczeństwo <span class="whitespace-nowrap">– nasz wspólny cel!</span>
-</h1>
-<p class="text-lg text-brandWhite/80">
-    Od szczegółowego planu po praktyczne wdrożenie — umacniamy systemy bezpieczeństwa organizacji w całej Polsce.
-   </p>
-</div>
-<!-- Right -->
-<div class="flex-1 flex flex-col gap-4 w-full lg:w-auto">
+  <video autoplay
+         class="absolute top-0 left-0 w-full h-full object-cover object-top z-[-2]"
+         loop muted playsinline>
+    <source src="images/hero-video-v1.mp4" type="video/mp4"/>
+    Your browser does not support HTML5 video.
+  </video>
 
-  <!-- Button 1 – White by default, transparent on hover -->
-  <a href="#"
-     class="px-6 py-3 bg-brandWhite text-brandBlack font-semibold font-black-body rounded border-2 border-brandWhite transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-white shadow-xl hover:shadow-brandWhite/30">
-    Ochrona ludności i obrona cywilna
-  </a>
+  <div class="absolute inset-0 top-0 left-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-1] pointer-events-none"></div>
 
-  <!-- Button 2 – Transparent, turns white on hover -->
-  <a href="#"
-     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
-    Audyty bezpieczeństwa
-  </a>
+  <div class="max-w-7xl mx-auto px-6 p-36 flex flex-col lg:flex-row items-start justify-between gap-12 relative">
+    
+    <!-- Left (buttons) -->
+    <div class="flex flex-col gap-4 w-full lg:w-auto order-2 lg:order-1">
+      <a href="#"
+         class="px-6 py-3 bg-brandAccent text-brandWhite font-semibold font-black-body rounded border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
+        Ochrona ludności i obrona cywilna
+      </a>
 
-  <!-- Button 3 – Same as above -->
-  <a href="#"
-     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
-    Kongres SAFE PLACE 2025
-  </a>
+      <a href="#"
+         class="px-6 py-3 border-2 border-brandWhite bg-white text-brandBlue font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 shadow-xl hover:shadow-brandWhite/30">
+        Audyty bezpieczeństwa
+      </a>
 
-</div>
+      <a href="#"
+         class="px-6 py-3 border-2 border-brandWhite bg-white text-brandBlue font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 shadow-xl hover:shadow-brandWhite/30">
+        Kongres SAFE PLACE 2025
+      </a>
+    </div>
+
+    <!-- Right (headline & text) -->
+    <div class="flex-1 max-w-xl order-1 lg:order-2">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+        Twoje bezpieczeństwo <span class="whitespace-nowrap">– nasz wspólny cel!</span>
+      </h1>
+      <p class="text-lg text-brandWhite/80">
+        Od szczegółowego planu po praktyczne wdrożenie — budujemy systemy bezpieczeństwa organizacji i&nbsp;obiektów w&nbsp;całej Polsce
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Nasze usługi -->
@@ -249,11 +252,8 @@
   <div class="relative z-10 max-w-7xl mx-auto px-6">
     <!-- Heading -->
     <div class="text-center mb-12">
-      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
-        Nasze usługi
-      </p>
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
-        Jak możemy wesprzeć projektowanie Twojego bezpieczeństwa?
+        Nasze usługi
       </h2>
     </div>
 
@@ -409,12 +409,12 @@
 
     <!-- Heading -->
     <div class="text-center mb-20">
-      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
         Safety Project w liczbach
-      </p>
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">
-        Gwarancja najwyższej jakości projektów
       </h2>
+      <p class="text-lg md:text-lg tracking-wider text-brandGray">
+        Wyniki naszej aktywności są gwarancją najwyższej jakości projektów Safety Project.
+      </p>
     </div>
 
     <!-- Counters Grid -->
@@ -577,7 +577,7 @@
     <!-- Button -->
      
     <div class="text-center mt-12">
-  <a href="#" class="inline-flex items-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+  <a href="#" class="inline-flex items-center gap-4 px-6 py-3 bg-brandBlue text-brandWhite font-semibold font-black-body rounded border-2 border-brandBlue transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandBlue/30 hover:gap-5">
     Zobacz wszystkie referencje
     <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
@@ -662,7 +662,7 @@
       </div>
 
 
-       <a href="#" class="inline-flex items-center mt-12 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+       <a href="#" class="inline-flex items-center mt-12 px-6 py-3 bg-brandAccent text-brandWhite font-semibold font-black-body rounded border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
     Umów się na bezpłatną konsultację
   </a>
     </div>
@@ -730,7 +730,7 @@
 
   <div class="pt-4">
     <button type="submit"
-      class="px-6 py-3 bg-white border-2 border-brandWhite text-brandBlue font-semibold rounded hover:bg-transparent hover:text-white transition">
+      class="px-6 py-3 bg-brandAccent text-brandWhite font-semibold font-black-body rounded border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
       Wyślij wiadomość
     </button>
   </div>
