@@ -19,7 +19,6 @@
             brandGray: '#929296',
             brandBlack: '#111111',
             brandLightBLue: '#e8f6ff',
-            brandAccent: '#cca400',
           },
           fontFamily: {
             heading: ['Oxanium', 'sans-serif'],
@@ -42,10 +41,6 @@
   .font-black-body {
     font-family: 'Schibsted Grotesk', sans-serif;
     font-weight: 900;
-  }
-  ::selection {
-    background-color: #23527E; 
-    color: #ffffff;
   }
 </style>
 
@@ -122,7 +117,7 @@
         </li>
         <li><a href="#" class="hover:text-brandBlue">Kontakt</a></li>
         <li>
-          <a href="#" class="px-6 py-3 bg-brandAccent text-white border-2 border-brandAccent font-semibold rounded hover:bg-transparent hover:text-brandAccent transition-all duration-300 whitespace-nowrap">
+          <a href="#" class="px-6 py-3 bg-brandBlue text-white border-2 border-brandBlue font-semibold rounded hover:bg-transparent hover:text-brandBlue transition-all duration-300 whitespace-nowrap">
             Bezpłatna konsultacja
           </a>
         </li>
@@ -198,7 +193,7 @@
 
     <!-- CTA -->
     <li>
-      <a href="#" class="block py-3 px-4 text-center bg-brandAccent text-white border-2 border-brandAccent font-semibold rounded hover:bg-transparent hover:text-brandAccent transition-all duration-300">
+      <a href="#" class="block py-3 px-4 bg-brandBlue border-2 border-brandBlue text-white text-center font-semibold rounded hover:bg-transparent hover:text-brandBlue transition-all duration-300">
         Bezpłatna konsultacja
       </a>
     </li>
@@ -209,302 +204,196 @@
 
 
 <section class="relative text-white z-0 overflow-hidden">
-  <video autoplay
-         class="absolute top-0 left-0 w-full h-full object-cover object-top z-[-2]"
-         loop muted playsinline>
-    <source src="images/hero-video-v1.mp4" type="video/mp4"/>
-    Your browser does not support HTML5 video.
-  </video>
+<video autoplay="" class="absolute top-0 left-0 w-full h-full object-cover object-top z-[-2]" loop="" muted="" playsinline="">
+<source src="images/hero-video-v1.mp4" type="video/mp4"/>
+  Your browser does not support HTML5 video.
+ </video>
+<div class="absolute inset-0 top-0 left-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-1] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 p-36 flex flex-col lg:flex-row items-start justify-between gap-12 relative">
+<!-- Left -->
+<div class="flex-1 max-w-xl">
+<h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+    Twoje bezpieczeństwo <span class="whitespace-nowrap">– nasz wspólny cel!</span>
+</h1>
+<p class="text-lg text-brandWhite/80">
+    Od szczegółowego planu po praktyczne wdrożenie — umacniamy systemy bezpieczeństwa organizacji w całej Polsce.
+   </p>
+</div>
+<!-- Right -->
+<div class="flex-1 flex flex-col gap-4 w-full lg:w-auto">
 
-  <div class="absolute inset-0 top-0 left-0 bg-[linear-gradient(to_bottom_right,_#000000cc,_#1f81f4cc)] z-[-1] pointer-events-none"></div>
+  <!-- Button 1 – White by default, transparent on hover -->
+  <a href="#"
+     class="px-6 py-3 bg-brandWhite text-brandBlack font-semibold font-black-body rounded border-2 border-brandWhite transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-white shadow-xl hover:shadow-brandWhite/30">
+    Ochrona ludności i obrona cywilna
+  </a>
 
-  <div class="max-w-7xl mx-auto px-6 p-36 flex flex-col lg:flex-row items-start justify-between gap-12 relative">
-    
-    <!-- Left (buttons) -->
-    <div class="flex flex-col gap-4 w-full lg:w-auto order-2 lg:order-1">
-      <a href="#"
-         class="px-6 py-3 bg-brandAccent text-brandWhite font-semibold font-black-body rounded border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
-        Ochrona ludności i obrona cywilna
-      </a>
+  <!-- Button 2 – Transparent, turns white on hover -->
+  <a href="#"
+     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
+    Audyty bezpieczeństwa
+  </a>
 
-      <a href="#"
-         class="px-6 py-3 border-2 border-brandWhite bg-white text-brandBlack font-semibold font-black-body rounded transition-all duration-300 ease-in-out transform hover:scale-105 shadow-xl hover:shadow-brandWhite/30">
-        Audyty bezpieczeństwa
-      </a>
+  <!-- Button 3 – Same as above -->
+  <a href="#"
+     class="px-6 py-3 border-2 border-white text-white font-semibold font-black-body rounded transition-all duration-300 hover:gap-5 ease-in-out transform hover:scale-105 hover:bg-white hover:text-brandBlack shadow-xl hover:shadow-brandWhite/30">
+    Kongres SAFE PLACE 2025
+  </a>
 
-      <a href="#"
-         class="px-6 py-3 border-2 border-brandWhite bg-white text-brandBlack font-semibold font-black-body rounded transition-all duration-300 ease-in-out transform hover:scale-105 shadow-xl hover:shadow-brandWhite/30">
-        Kongres SAFE PLACE 2025
-      </a>
-    </div>
-
-    <!-- Right (headline & text) -->
-    <div class="flex-1 max-w-xl order-1 lg:order-2">
-      <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-        Twoje bezpieczeństwo <span class="whitespace-nowrap">– nasz wspólny cel!</span>
-      </h1>
-      <p class="text-lg text-brandWhite/80">
-        Od szczegółowego planu po praktyczne wdrożenie — budujemy systemy bezpieczeństwa organizacji i&nbsp;obiektów w&nbsp;całej Polsce
-      </p>
-    </div>
-  </div>
+</div>
 </section>
-<!-- Nasze usługi + Nasze wartości (jeden wspólny blok z tym samym overlayem) -->
-<section class="relative py-20 overflow-hidden bg-brandWhite">
-  <!-- Overlay tła -->
+
+<!-- Nasze usługi -->
+<section class="relative py-20 overflow-hidden">
   <div class="absolute inset-0 bg-[url('images/tlo-obiektowe-białe.webp')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
-
   <div class="relative z-10 max-w-7xl mx-auto px-6">
-    <!-- === Nasze usługi === -->
+    <!-- Heading -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
         Nasze usługi
-      </h2>
-    </div>
-
-    <!-- Grid Usługi -->
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- Service 1 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/szkolenia-16x9.webp" alt="Szkolenia i warsztaty"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body text-brandWhite mb-2 mt-4 text-center lg:text-left">Szkolenia i warsztaty</h3>
-            <p class="text-sm text-brandGray mb-6">Dla zarządów • Dla pracowników • Dla każdego</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Service 2 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/audyty-16x9.webp" alt="Audyty bezpieczeństwa"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body mb-2 mt-4 text-center lg:text-left">Audyty bezpieczeństwa</h3>
-            <p class="text-sm text-brandGray mb-6">Rzetelnie • Obiektywnie • Kompleksowo</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Service 3 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/plany-16x9.webp" alt="Plany ochrony"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body mb-2 mt-4 text-center lg:text-left">Plany ochrony i załączniki AT</h3>
-            <p class="text-sm text-brandGray mb-6">Wykonywanie • Uzgadnianie • Aktualizacja</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Service 4 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/olioc-16x9.webp" alt="Ochrona ludności"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body mb-2 mt-4 text-center lg:text-left">Ochrona ludności i obrona cywilna</h3>
-            <p class="text-sm text-brandGray mb-6">Doradztwo • Audyty • Szkolenia i ćwiczenia</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Service 5 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/doradztwo-16x9.webp" alt="Doradztwo"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body mb-2 mt-4 text-center lg:text-left">Doradztwo i konsultacje</h3>
-            <p class="text-sm text-brandGray mb-6">Bezpłatnie • Rzeczowo • Wiarygodnie</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Service 6 -->
-      <a href="#" class="group block bg-brandBlack text-brandWhite overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
-        <div class="overflow-hidden">
-          <img src="images/odpornosc-60-16x9.webp" alt="Projekt Odporność"
-               class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
-        </div>
-        <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xl font-black-body mb-2 mt-4 text-center lg:text-left">Projekt Odporność 6.0</h3>
-            <p class="text-sm text-brandGray mb-6">Dla każdej organizacji i obiektu • Kompleksowo i&nbsp;systemowo • Z certyfikacją</p>
-          </div>
-          <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:bg-transparent hover:text-brandBlue">
-            Dowiedz się więcej
-            <span class="w-5 h-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
-              </svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- === Nasze wartości (kontynuacja tej samej sekcji) === -->
-    <div class="mt-24 text-center">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue mb-6">
-        Jakość Safety Project
-      </h2>
-      <p class="mb-4 text-lg text-brandBlack/80">
-        Nasze realizacje opieramy na silnych wartościach marki Safety Project:
       </p>
-
-      <!-- Grid Ikon -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-        <!-- One card inside your grid -->
-<div class="group relative overflow-hidden bg-white shadow-md h-56">
-  <!-- Visible layer (icon + title) -->
-  <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-    <svg class="w-16 h-16 mb-4" viewBox="0 0 24 24">
-      <path d="M19,11a2.962,2.962,0,0,1,1,.184V7H15.859A4,4,0,1,0,8.141,7H4v4.184A2.962,2.962,0,0,1,5,11a3,3,0,0,1,0,6,2.962,2.962,0,0,1-1-.184V22H9.184A2.962,2.962,0,0,1,9,21a3,3,0,0,1,6,0,2.962,2.962,0,0,1-.184,1H20V16.816A2.962,2.962,0,0,1,19,17a3,3,0,0,1,0-6Z"/>
-    </svg>
-    <p class="text-lg text-center"><span class="font-black-body">Kompleksowe</span> podejście</p>
-  </div>
-
-  <!-- Hidden blue layer (reveals on hover) -->
-  <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-    <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-      Dzięki inderdyscyplinarnej wiedzy i&nbsp;doświadczeniu naszych ekspertów dostarczamy rozwiązania dostosowane do&nbsp;indywidualnych potrzeb
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
+        Jak możemy wesprzeć projektowanie Twojego bezpieczeństwa?
+      </h2>
     </div>
-  </div>
+
+    <!-- Grid -->
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Service 1 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/szkolenia-16x9.webp" alt="Szkolenia i warsztaty"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Szkolenia i warsztaty</h3>
+        <p class="text-sm text-brandGray mb-6">Dla zarządów • Dla pracowników • Dla każdego</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 2 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/audyty-16x9.webp" alt="Audyty bezpieczeństwa"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Audyty bezpieczeństwa</h3>
+        <p class="text-sm text-brandGray mb-6">Rzetelnie • Obiektywnie • Kompleksowo</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 3 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/plany-16x9.webp" alt="Plany ochrony"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Plany ochrony i załączniki AT</h3>
+        <p class="text-sm text-brandGray mb-6">Wykonywanie • Uzgadnianie • Aktualizacja</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 4 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/olioc-16x9.webp" alt="Ochrona ludności"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Ochrona ludności i obrona cywilna</h3>
+        <p class="text-sm text-brandGray mb-6">Doradztwo • Audyty • Szkolenia i ćwiczenia</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 5 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/doradztwo-16x9.webp" alt="Doradztwo"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Doradztwo i konsultacje</h3>
+        <p class="text-sm text-brandGray mb-6">Bezpłatnie • Rzeczowo • Wiarygodnie</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Service 6 -->
+  <a href="#" class="group block bg-white text-brandBlack overflow-hidden flex flex-col shadow-lg transition-shadow duration-500 hover:shadow-2xl border-t-8 border-brandBlue">
+    <div class="overflow-hidden">
+      <img src="images/odpornosc-60-16x9.webp" alt="Projekt Odporność"
+           class="w-full transition-transform duration-700 ease-in-out group-hover:scale-[1.03] group-hover:rotate-[0.5deg]">
+    </div>
+    <div class="px-6 pb-6 flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-black-body text-brandBlack mb-2 mt-4 text-center lg:text-left">Projekt Odporność 6.0</h3>
+        <p class="text-sm text-brandGray mb-6">Dla każdej organizacji i obiektu • Kompleksowo i&nbsp;systemowo • Z certyfikacją</p>
+      </div>
+      <div class="inline-flex items-center justify-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+        Dowiedz się więcej
+        <span class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+
 </div>
-
-<!-- Ikona 2 -->
-  <div class="group relative overflow-hidden bg-white shadow-md h-56">
-    <!-- Front content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-      <svg class="w-16 h-16 mb-4" viewBox="0 0 512 512"><path d="M19 100.9l198.4-68.89c9.4 24.82 24.8 41.58 58.1 34.5h165.8l42.5 130.09-42.5 31.6 25.8 10.4L493 368.2l-68.5 68.4 7.4 43.4-52.3-34.5h-76l-17.2 16.7-17.4-34.1c-49.6-11.2-85-35.6-120.4-63.1l-10 28.7-24.5-34.3-59.16-28.1C31.42 248.1 24.77 174.3 19 100.9z"/></svg>
-      <p class="text-lg text-center"><span class="font-black-body">Ogólnokrajowy</span> zasięg</p>
-    </div>
-    <!-- Hover content -->
-    <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-      <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-        Posiadamy ośrodki szkoleniowe i&nbsp;ekspertów m.in. we Wrocławiu, Warszawie, Łodzi, Krakowie i Poznaniu
-      </div>
-    </div>
-  </div>
-
-  <!-- Ikona 3 -->
-  <div class="group relative overflow-hidden bg-white shadow-md h-56">
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-      <svg class="w-16 h-16 mb-4" viewBox="-7.5 0 32 32"><path d="M14.625 15.156h2.094c0.281 0 0.5 0.25 0.5 0.531v11c0 0.281-0.219 0.5-0.5 0.5h-16.219c-0.281 0-0.5-0.219-0.5-0.5v-11c0-0.281 0.219-0.531 0.5-0.531h2.031v-5.125c0-2.875 1.844-5.25 4.688-5.25h2.688c2.875 0 4.719 2.375 4.719 5.25v5.125zM5.188 15.156h6.813v-4.875c0-1.594-1.313-2.938-2.938-2.938h-0.969c-1.594 0-2.906 1.344-2.906 2.938v4.875zM7.156 24h2.906l-0.719-3.156c0.5-0.25 0.844-0.781 0.844-1.375 0-0.906-0.719-1.594-1.594-1.594s-1.563 0.688-1.563 1.594c0 0.594 0.344 1.125 0.844 1.375z"></path></svg>
-      <p class="text-lg text-center"><span class="font-black-body">Poufność</span> współpracy</p>
-    </div>
-    <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-      <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-        Zapewniamy bezpieczeństwo wszelkich informacji związanych z&nbsp;naszymi realizacjami
-      </div>
-    </div>
-  </div>
-
-  <!-- Ikona 4 -->
-  <div class="group relative overflow-hidden bg-white shadow-md h-56">
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-      <svg class="w-16 h-16 mb-4" height="800px" width="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 224.726 224.726" xml:space="preserve"> <path d="M223.612,109.586L190.5,35.752c-0.001-0.002-0.002-0.004-0.003-0.006l-0.043-0.096c-0.111-0.247-0.243-0.479-0.389-0.7 c-0.039-0.06-0.086-0.114-0.127-0.171c-0.131-0.182-0.272-0.353-0.424-0.514c-0.06-0.063-0.121-0.125-0.184-0.185 c-0.168-0.159-0.345-0.306-0.533-0.44c-0.049-0.036-0.094-0.076-0.145-0.11c-0.236-0.156-0.486-0.29-0.746-0.405 c-0.074-0.033-0.151-0.057-0.227-0.086c-0.204-0.078-0.411-0.143-0.625-0.194c-0.088-0.021-0.175-0.042-0.264-0.058 c-0.293-0.054-0.591-0.09-0.896-0.09h-58.428c-1-3.111-2.943-5.794-5.485-7.737v-7.262c0-2.761-2.239-5-5-5h-9.334 c-2.761,0-5,2.239-5,5v7.381c-2.465,1.933-4.347,4.572-5.326,7.619H38.734c-0.305,0-0.602,0.037-0.896,0.09 c-0.09,0.016-0.176,0.037-0.264,0.058c-0.214,0.051-0.422,0.116-0.625,0.194c-0.076,0.029-0.153,0.053-0.227,0.086 c-0.26,0.115-0.51,0.248-0.746,0.405c-0.051,0.034-0.096,0.074-0.145,0.11c-0.188,0.134-0.365,0.28-0.533,0.44 c-0.064,0.06-0.124,0.122-0.185,0.185c-0.153,0.161-0.293,0.333-0.424,0.514c-0.042,0.058-0.088,0.112-0.127,0.171 c-0.146,0.221-0.278,0.453-0.389,0.7l-0.043,0.096c-0.001,0.002-0.002,0.004-0.003,0.006L0.897,109.848 C0.335,110.657,0,111.636,0,112.696c0,21.358,17.376,38.734,38.734,38.734c21.358,0,38.734-17.376,38.734-38.734 c0-1.06-0.334-2.038-0.897-2.847L46.456,42.696h50.986c1.007,2.905,2.831,5.424,5.204,7.286v125.381H58.308 c-1.871,0-3.586,1.045-4.444,2.708L40.11,204.738c-0.799,1.55-0.733,3.405,0.174,4.894c0.908,1.489,2.525,2.398,4.27,2.398h135.519 c0.006-0.001,0.012,0,0.02,0c2.761,0,5-2.239,5-5c0-0.98-0.282-1.894-0.769-2.665l-13.563-26.294 c-0.858-1.663-2.573-2.708-4.444-2.708H121.98V50.101c2.449-1.873,4.334-4.436,5.363-7.405h50.828l-30.475,67.954 c-0.008,0.018-0.012,0.036-0.02,0.054c-0.023,0.054-0.04,0.11-0.062,0.165c-0.09,0.229-0.162,0.463-0.217,0.699 c-0.014,0.062-0.032,0.122-0.044,0.184c-0.055,0.287-0.083,0.576-0.087,0.866c0,0.027-0.008,0.051-0.008,0.078 c0,21.358,17.376,38.734,38.734,38.734s38.734-17.376,38.734-38.734C224.726,111.514,224.298,110.442,223.612,109.586z M64.646,107.696H12.822l25.912-57.781L64.646,107.696z M118.226,37.53c0,3.217-2.617,5.833-5.833,5.833 c-3.217,0-5.834-2.617-5.834-5.833c0-3.217,2.617-5.833,5.834-5.833C115.609,31.696,118.226,34.313,118.226,37.53z M159.98,107.696 l25.913-57.781l25.912,57.781H159.98z"/> </svg>
-      <p class="text-lg text-center">100% zgodności z <span class="font-black-body">aktualnymi przepisami prawa</span></p>
-    </div>
-    <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-      <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-        Opieramy nasze projekty na silnej podstawie naukowej i&nbsp;prawnej, popartej badaniami oraz doświadczeniem
-      </div>
-    </div>
-  </div>
-
-  <!-- Ikona 5 -->
-  <div class="group relative overflow-hidden bg-white shadow-md h-56">
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-      <svg class="w-16 h-16 mb-4" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9 4.5C15.9 3 14.418 2 13.26 2c-.806 0-.869.612-.993 1.82-.055.53-.121 1.174-.267 1.93-.386 2.002-1.72 4.56-2.996 5.325V17C9 19.25 9.75 20 13 20h3.773c2.176 0 2.703-1.433 2.899-1.964l.013-.036c.114-.306.358-.547.638-.82.31-.306.664-.653.927-1.18.311-.623.27-1.177.233-1.67-.023-.299-.044-.575.017-.83.064-.27.146-.475.225-.671.143-.356.275-.686.275-1.329 0-1.5-.748-2.498-2.315-2.498H15.5S15.9 6 15.9 4.5zM5.5 10A1.5 1.5 0 0 0 4 11.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 5.5 10z"/></svg>
-      <p class="text-lg text-center">Gwarancja <span class="font-black-body">satysfakcji</span></p>
-    </div>
-    <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-      <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-        Dążymy do zapewnienia najwyższej jakości naszym projektom, badając poziom satysfakcji i&nbsp;reagując na bieżąco na wszelkie Państwa rekomendacje
-      </div>
-    </div>
-  </div>
-
-  <!-- Ikona 6 -->
-  <div class="group relative overflow-hidden bg-white shadow-md h-56">
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-8 fill-brandBlue text-brandBlack transition-transform duration-500 ease-out group-hover:-translate-y-full">
-      <svg class="w-16 h-16 mb-4" viewBox="0 0 14 14"><path d="m 11.96875,4.75 -9.9375,0 C 1.8759297,4.75 1.75,4.62407 1.75,4.46875 L 1.75,3.625 C 1.75,3.00367 2.2536719,2.5 2.875,2.5 L 4,2.5 4,1.28125 C 4,1.12593 4.1259297,1 4.28125,1 l 0.9375,0 C 5.3740703,1 5.5,1.12593 5.5,1.28125 l 0,1.21875 3,0 0,-1.21875 C 8.5,1.12593 8.6259297,1 8.78125,1 l 0.9375,0 C 9.8740703,1 10,1.12593 10,1.28125 L 10,2.5 l 1.125,0 c 0.621328,0 1.125,0.50367 1.125,1.125 l 0,0.84375 C 12.25,4.62407 12.12407,4.75 11.96875,4.75 Z m -9.9375,0.75 9.9375,0 C 12.12407,5.5 12.25,5.62593 12.25,5.78125 l 0,6.09375 C 12.25,12.49633 11.746328,13 11.125,13 l -8.25,0 C 2.2536719,13 1.75,12.49633 1.75,11.875 l 0,-6.09375 C 1.75,5.62593 1.8759297,5.5 2.03125,5.5 Z M 9.842875,7.74876 9.1826641,7.08318 C 9.0732813,6.97291 8.8952031,6.97218 8.7849297,7.08118 L 6.2996875,9.54643 5.2220313,8.46005 C 5.1126484,8.34978 4.9345469,8.34905 4.8242734,8.45805 L 4.1587188,9.11828 c -0.1102735,0.10938 -0.111,0.28746 -0.00159,0.39774 l 1.9359609,1.95161 c 0.1093829,0.11028 0.287461,0.111 0.3977344,0.002 l 3.350461,-3.32356 c 0.1102734,-0.10938 0.111,-0.28746 0.00159,-0.39773 z"/></svg>
-      <p class="text-lg text-center"><span class="font-black-body">Terminowość</span> realizacji projektów</p>
-    </div>
-    <div class="absolute inset-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-      <div class="w-full h-full bg-brandBlue text-white flex items-center justify-center p-6 text-center">
-        Zawsze dowiązujemy nasze projekty do&nbsp;realnych terminów, których bezwzględnie przestrzegamy
-      </div>
-    </div>
-  </div>
-
-</div>
-
-      <!-- CTA -->
-      <a href="#" class="inline-flex items-center mt-12 px-6 py-3 bg-brandAccent rounded text-brandWhite font-semibold font-black-body border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
-        Umów się na bezpłatną konsultację
-      </a>
-    </div>
-  </div>
 </section>
-
 
 <!-- Liczniki / Statystyki -->
 <section class="relative text-white py-20 overflow-hidden">
@@ -520,8 +409,11 @@
 
     <!-- Heading -->
     <div class="text-center mb-20">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
         Safety Project w liczbach
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-white">
+        Gwarancja najwyższej jakości projektów
       </h2>
     </div>
 
@@ -588,61 +480,88 @@
   </div>
 </section>
 
+<!-- Misja firmy -->
+<section class="py-20 bg-brandLightBLue text-brandBlack"> 
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- Founder image -->
+    <div class="flex justify-center md:block">
+      <img alt="mjr rez. dr hab. inż. Jarosław Stelmach, Prezes Safety Project"
+           class="w-3/4 shadow rounded-full"
+           src="images/stelmach-ksiazka.webp"/>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h2 class="text-3xl mb-6 md:text-4xl font-heading font-bold text-brandBlue">
+        Misja firmy
+      </h2>
+      <p class="mb-4 text-lg">
+        Misją firmy <span class="font-black-body">Safety Project</span> jest świadczenie profesjonalnych i&nbsp;dostosowanych do&nbsp;indywidualnych potrzeb usług szkoleniowych i&nbsp;doradczych. Nasze projekty realizujemy w&nbsp;obszarze bezpieczeństwa i&nbsp;komunikacji, ze&nbsp;szczególnym uwzględnieniem budynków użyteczności publicznej i&nbsp;obiektów kluczowych dla bezpieczeństwa państwa.
+      </p>
+      <img alt="Podpis Jarosław Stelmach"
+           class="h-36 mt-6 ml-auto"
+           src="images/stelmach-podpis.webp"/>
+    </div>
+
+  </div>
+</section>
+
 <section class="relative bg-white text-brandBlack py-20 overflow-hidden">
-  <div class="absolute inset-0 bg-[url('images/tlo-obiektowe-białe.webp')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
   <!-- Background Image -->
+  <div class="absolute inset-0 bg-[url('images/tlo-obiektowe-białe.webp')] bg-cover bg-center bg-no-repeat opacity-30 z-0"></div>
 
   <!-- Content Wrapper -->
   <div class="relative z-10 max-w-7xl mx-auto px-6">
 
     <!-- Headings -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue mb-6">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-6">
         Wybrane referencje
-      </h2>
-      <p class="text-lg md:text-lg text-brandGray">
-        Jesteśmy dumni i wdzięczni, że zaufały nam organizacje takie, jak:
       </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue">
+        Co o nas mówią?
+      </h2>
     </div>
 
 <div class="relative px-6 sm:px-0">
   <!-- LEFT ARROW -->
   <div class="absolute top-1/2 left-6 lg:-left-24">
-    <div class="swiper-button-prev p-10 rounded-full text-brandBlue border-2 border-brandBlue bg-brandWhite/50 overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
+    <div class="swiper-button-prev p-10 rounded-full text-brandBlue bg-brandLightBLue overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
   </div>
 
   <!-- RIGHT ARROW -->
   <div class="absolute top-1/2 right-6 lg:-right-24">
-    <div class="swiper-button-next p-10 rounded-full text-brandBlue border-2 border-brandBlue bg-brandWhite/50 overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
+    <div class="swiper-button-next p-10 rounded-full text-brandBlue bg-brandLightBLue overflow-hidden transition-all transition:duration-300 before:ease-out hover:text-brandWhite hover:bg-brandBlue hover:shadow-2xl hover:shadow-brandBlue"></div>
   </div>
 
       <!-- Swiper -->
       <div class="swiper reference-swiper px-2">
         <div class="swiper-wrapper items-stretch">
           <!-- Slide -->
-          <div class="swiper-slide bg-brandBlack text-brandWhite p-4 shadow-md h-auto">
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
             <img src="images/rekomendacja-ABW-5x7.webp" alt="Agencja Bezpieczeństwa Wewnętrznego" class="w-full h-auto rounded mb-4">
-            <p class="font-semibold text-sm text-center">Agencja Bezpieczeństwa Wewnętrznego</p>
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Agencja Bezpieczeństwa Wewnętrznego</p>
           </div>
 
-          <div class="swiper-slide bg-brandBlack text-brandWhite p-4 shadow-md h-auto">
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
             <img src="images/rekomendacja-MFiPR-5x7.webp" alt="Ministerstwo Funduszy i Polityki Regionalnej" class="w-full h-auto rounded mb-4">
-            <p class="font-semibold text-sm text-center">Ministerstwo Funduszy i Polityki Regionalnej</p>
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Ministerstwo Funduszy i Polityki Regionalnej</p>
           </div>
 
-          <div class="swiper-slide bg-brandBlack text-brandWhite p-4 shadow-md h-auto">
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
             <img src="images/rekomendacja-Philips-5x7.webp" alt="Philips" class="w-full h-auto rounded mb-4">
-            <p class="font-semibold text-sm text-center">Philips</p>
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Philips</p>
           </div>
 
-          <div class="swiper-slide bg-brandBlack text-brandWhite p-4 shadow-md h-auto">
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
             <img src="images/rekomendacja-Starostwo-Powiatowe-w-Żurominie-5x7.webp" alt="Starostwo Powiatowe w Żurominie" class="w-full h-auto rounded mb-4">
-            <p class="font-semibold text-sm text-center">Starostwo Powiatowe w Żurominie</p>
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Starostwo Powiatowe w Żurominie</p>
           </div>
 
-          <div class="swiper-slide bg-brandBlack text-brandWhite p-4 shadow-md h-auto">
+          <div class="swiper-slide bg-brandLightBLue p-4 shadow-md h-auto">
             <img src="images/rekomendacja-UM-Łomża-5x7.webp" alt="Urząd Miejski w Łomży" class="w-full h-auto rounded mb-4">
-            <p class="font-semibold text-sm text-center">Urząd Miejski w Łomży</p>
+            <p class="font-semibold text-sm text-center text-brandBlack/80">Urząd Miejski w Łomży</p>
           </div>
           
         </div>
@@ -658,13 +577,96 @@
     <!-- Button -->
      
     <div class="text-center mt-12">
-  <a href="#" class="inline-flex items-center gap-4 px-6 py-3 bg-brandBlue text-brandWhite font-semibold font-black-body rounded border-2 border-brandBlue transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandBlue/30">
+  <a href="#" class="inline-flex items-center gap-4 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
     Zobacz wszystkie referencje
     <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/>
     </svg>
   </a>
 </div>
+
+    <div class="mt-20 text-center">
+      <p class="text-sm md:text-base uppercase tracking-wider text-brandGray mb-4">
+        Nasze wartości
+      </p>
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brandBlue mb-6">
+        Dlaczego Safety Project?
+      </h2>
+      <p class="mb-4 text-lg">
+        Dążymy do&nbsp;zapewnienia <span class="font-black-body">najwyższej jakości</span> realizowanym projektom, opierając naszą działalność na wieloletnim doświadczeniu zawodowym trenerów oraz łączeniu <span class="font-black-body">naukowego i&nbsp;praktycznego</span> podejścia do&nbsp;rozwiązywania złożonych problemów z&nbsp;zakresu bezpieczeństwa i&nbsp;komunikacji.
+      </p>
+
+      <!-- Icon Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+        <!-- Icon 1 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,11a2.962,2.962,0,0,1,1,.184V7H15.859A4,4,0,1,0,8.141,7H4v4.184A2.962,2.962,0,0,1,5,11a3,3,0,0,1,0,6,2.962,2.962,0,0,1-1-.184V22H9.184A2.962,2.962,0,0,1,9,21a3,3,0,0,1,6,0,2.962,2.962,0,0,1-.184,1H20V16.816A2.962,2.962,0,0,1,19,17a3,3,0,0,1,0-6Z"></path></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Kompleksowe</span> podejście</p>
+</div>
+
+        <!-- Icon 2 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M19 100.9l198.4-68.89c9.4 24.82 24.8 41.58 58.1 34.5h165.8l42.5 130.09-42.5 31.6 25.8 10.4L493 368.2l-68.5 68.4 7.4 43.4-52.3-34.5h-76l-17.2 16.7-17.4-34.1c-49.6-11.2-85-35.6-120.4-63.1l-10 28.7-24.5-34.3-59.16-28.1C31.42 248.1 24.77 174.3 19 100.9z"/></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Ogólnokrajowy</span> zasięg</p>
+</div>
+
+        <!-- Icon 3 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="-7.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>lock</title>
+<path d="M14.625 15.156h2.094c0.281 0 0.5 0.25 0.5 0.531v11c0 0.281-0.219 0.5-0.5 0.5h-16.219c-0.281 0-0.5-0.219-0.5-0.5v-11c0-0.281 0.219-0.531 0.5-0.531h2.031v-5.125c0-2.875 1.844-5.25 4.688-5.25h2.688c2.875 0 4.719 2.375 4.719 5.25v5.125zM5.188 15.156h6.813v-4.875c0-1.594-1.313-2.938-2.938-2.938h-0.969c-1.594 0-2.906 1.344-2.906 2.938v4.875zM7.156 24h2.906l-0.719-3.156c0.5-0.25 0.844-0.781 0.844-1.375 0-0.906-0.719-1.594-1.594-1.594s-1.563 0.688-1.563 1.594c0 0.594 0.344 1.125 0.844 1.375z"></path>
+</svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Poufność</span> współpracy</p>
+</div>
+
+        <!-- Icon 4 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" height="800px" width="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 224.726 224.726" xml:space="preserve">
+<path d="M223.612,109.586L190.5,35.752c-0.001-0.002-0.002-0.004-0.003-0.006l-0.043-0.096c-0.111-0.247-0.243-0.479-0.389-0.7
+	c-0.039-0.06-0.086-0.114-0.127-0.171c-0.131-0.182-0.272-0.353-0.424-0.514c-0.06-0.063-0.121-0.125-0.184-0.185
+	c-0.168-0.159-0.345-0.306-0.533-0.44c-0.049-0.036-0.094-0.076-0.145-0.11c-0.236-0.156-0.486-0.29-0.746-0.405
+	c-0.074-0.033-0.151-0.057-0.227-0.086c-0.204-0.078-0.411-0.143-0.625-0.194c-0.088-0.021-0.175-0.042-0.264-0.058
+	c-0.293-0.054-0.591-0.09-0.896-0.09h-58.428c-1-3.111-2.943-5.794-5.485-7.737v-7.262c0-2.761-2.239-5-5-5h-9.334
+	c-2.761,0-5,2.239-5,5v7.381c-2.465,1.933-4.347,4.572-5.326,7.619H38.734c-0.305,0-0.602,0.037-0.896,0.09
+	c-0.09,0.016-0.176,0.037-0.264,0.058c-0.214,0.051-0.422,0.116-0.625,0.194c-0.076,0.029-0.153,0.053-0.227,0.086
+	c-0.26,0.115-0.51,0.248-0.746,0.405c-0.051,0.034-0.096,0.074-0.145,0.11c-0.188,0.134-0.365,0.28-0.533,0.44
+	c-0.064,0.06-0.124,0.122-0.185,0.185c-0.153,0.161-0.293,0.333-0.424,0.514c-0.042,0.058-0.088,0.112-0.127,0.171
+	c-0.146,0.221-0.278,0.453-0.389,0.7l-0.043,0.096c-0.001,0.002-0.002,0.004-0.003,0.006L0.897,109.848
+	C0.335,110.657,0,111.636,0,112.696c0,21.358,17.376,38.734,38.734,38.734c21.358,0,38.734-17.376,38.734-38.734
+	c0-1.06-0.334-2.038-0.897-2.847L46.456,42.696h50.986c1.007,2.905,2.831,5.424,5.204,7.286v125.381H58.308
+	c-1.871,0-3.586,1.045-4.444,2.708L40.11,204.738c-0.799,1.55-0.733,3.405,0.174,4.894c0.908,1.489,2.525,2.398,4.27,2.398h135.519
+	c0.006-0.001,0.012,0,0.02,0c2.761,0,5-2.239,5-5c0-0.98-0.282-1.894-0.769-2.665l-13.563-26.294
+	c-0.858-1.663-2.573-2.708-4.444-2.708H121.98V50.101c2.449-1.873,4.334-4.436,5.363-7.405h50.828l-30.475,67.954
+	c-0.008,0.018-0.012,0.036-0.02,0.054c-0.023,0.054-0.04,0.11-0.062,0.165c-0.09,0.229-0.162,0.463-0.217,0.699
+	c-0.014,0.062-0.032,0.122-0.044,0.184c-0.055,0.287-0.083,0.576-0.087,0.866c0,0.027-0.008,0.051-0.008,0.078
+	c0,21.358,17.376,38.734,38.734,38.734s38.734-17.376,38.734-38.734C224.726,111.514,224.298,110.442,223.612,109.586z
+	 M64.646,107.696H12.822l25.912-57.781L64.646,107.696z M118.226,37.53c0,3.217-2.617,5.833-5.833,5.833
+	c-3.217,0-5.834-2.617-5.834-5.833c0-3.217,2.617-5.833,5.834-5.833C115.609,31.696,118.226,34.313,118.226,37.53z M159.98,107.696
+	l25.913-57.781l25.912,57.781H159.98z"/>
+</svg>
+  <p class="text-brandBlack text-lg text-center">100% zgodności z <span class="font-black-body">aktualnymi przepisami prawa</span></p>
+</div>
+
+        <!-- Icon 5 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9 4.5C15.9 3 14.418 2 13.26 2c-.806 0-.869.612-.993 1.82-.055.53-.121 1.174-.267 1.93-.386 2.002-1.72 4.56-2.996 5.325V17C9 19.25 9.75 20 13 20h3.773c2.176 0 2.703-1.433 2.899-1.964l.013-.036c.114-.306.358-.547.638-.82.31-.306.664-.653.927-1.18.311-.623.27-1.177.233-1.67-.023-.299-.044-.575.017-.83.064-.27.146-.475.225-.671.143-.356.275-.686.275-1.329 0-1.5-.748-2.498-2.315-2.498H15.5S15.9 6 15.9 4.5zM5.5 10A1.5 1.5 0 0 0 4 11.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 5.5 10z"/></svg>
+  <p class="text-brandBlack text-lg text-center">Gwarancja <span class="font-black-body">satysfakcji</span></p>
+</div>
+
+        <!-- Icon 6 -->
+<div class="flex flex-col items-center fill-brandBlue">
+  <svg class="w-16 h-16 mb-4" width="800px" height="800px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="m 11.96875,4.75 -9.9375,0 C 1.8759297,4.75 1.75,4.62407 1.75,4.46875 L 1.75,3.625 C 1.75,3.00367 2.2536719,2.5 2.875,2.5 L 4,2.5 4,1.28125 C 4,1.12593 4.1259297,1 4.28125,1 l 0.9375,0 C 5.3740703,1 5.5,1.12593 5.5,1.28125 l 0,1.21875 3,0 0,-1.21875 C 8.5,1.12593 8.6259297,1 8.78125,1 l 0.9375,0 C 9.8740703,1 10,1.12593 10,1.28125 L 10,2.5 l 1.125,0 c 0.621328,0 1.125,0.50367 1.125,1.125 l 0,0.84375 C 12.25,4.62407 12.12407,4.75 11.96875,4.75 Z m -9.9375,0.75 9.9375,0 C 12.12407,5.5 12.25,5.62593 12.25,5.78125 l 0,6.09375 C 12.25,12.49633 11.746328,13 11.125,13 l -8.25,0 C 2.2536719,13 1.75,12.49633 1.75,11.875 l 0,-6.09375 C 1.75,5.62593 1.8759297,5.5 2.03125,5.5 Z M 9.842875,7.74876 9.1826641,7.08318 C 9.0732813,6.97291 8.8952031,6.97218 8.7849297,7.08118 L 6.2996875,9.54643 5.2220313,8.46005 C 5.1126484,8.34978 4.9345469,8.34905 4.8242734,8.45805 L 4.1587188,9.11828 c -0.1102735,0.10938 -0.111,0.28746 -0.00159,0.39774 l 1.9359609,1.95161 c 0.1093829,0.11028 0.287461,0.111 0.3977344,0.002 l 3.350461,-3.32356 c 0.1102734,-0.10938 0.111,-0.28746 0.00159,-0.39773 z"/></svg>
+  <p class="text-brandBlack text-lg text-center"><span class="font-black-body">Terminowość</span> realizacji projektów</p>
+</div>
+      </div>
+
+
+       <a href="#" class="inline-flex items-center mt-12 px-6 py-3 border-2 border-brandBlue bg-brandBlue text-white font-semibold rounded transition-all duration-300 hover:gap-5 hover:bg-transparent hover:text-brandBlue">
+    Umów się na bezpłatną konsultację
+  </a>
+    </div>
+
   </div>
   
 </section>
@@ -674,11 +676,11 @@
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-5 items-start">
 
     <!-- Left: Contact form inside blue box -->
-    <div class="lg:col-span-3 bg-brandBlue p-8 shadow-lg">
+    <div class="lg:col-span-3 bg-brandBlue/90 p-8 shadow-lg">
       <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
         Nie wiesz, od czego zacząć?
       </h2>
-      <p class="mb-10 text-white/80">Skontaktuj się z&nbsp;nami bezpośrednio lub poprzez formularz, a&nbsp;nasz konsultant pomoże Ci w&nbsp;przejściu kolejnych kroków.</p>
+      <p class="mb-10 text-white/80">Skontaktuj się z nami bezpośrednio lub poprzez formularz, a nasz konsultant pomoże Ci w podjęciu kolejnych kroków.</p>
 
       <form action="#" method="POST" class="space-y-6">
   <div>
@@ -728,7 +730,7 @@
 
   <div class="pt-4">
     <button type="submit"
-      class="px-6 py-3 bg-brandAccent text-brandWhite font-semibold font-black-body rounded border-2 border-brandAccent transition-all duration-300 ease-in-out transform hover:scale-105 hover:text-white shadow-xl hover:shadow-brandAccent/30">
+      class="px-6 py-3 bg-white border-2 border-brandWhite text-brandBlue font-semibold rounded hover:bg-transparent hover:text-white transition">
       Wyślij wiadomość
     </button>
   </div>
